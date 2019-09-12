@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
+
+    <include layout="@layout/gm_title" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/root_title">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingEnd="@dimen/dp_16">
+
+            <TextView
+                android:id="@+id/tv_choose_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_20"
+                android:text="新建公司"
+                android:textColor="@color/color_444A53"
+                android:textSize="@dimen/ts_22"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="公司信息将被审核，请确保您输入的信息真实有效"
+                android:textColor="@color/color_7B8391"
+                android:textSize="@dimen/ts_13"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_choose_role" />
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_77"
+                app:layout_constraintTop_toBottomOf="@id/tv_choose_role">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_10"
+                    android:text="我的公司"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/ts_14" />
+
+                <EditText
+                    android:id="@+id/et_company_name"
+                    style="@style/boss_info_edit_text"
+                    android:hint="请输入公司全称"
+                    android:imeOptions="actionNext"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/color_F0"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_company"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_83"
+                app:layout_constraintTop_toBottomOf="@id/ctl_name">
+
+                <TextView
+                    android:id="@+id/tv_gender_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_10"
+                    android:text="公司简称"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/ts_14" />
+
+                <EditText
+                    android:id="@+id/tv_shore_name"
+                    style="@style/boss_info_edit_text"
+                    android:hint="简称作为招聘时展示的公司名称"
+                    android:imeOptions="actionDone"
+                    app:layout_constraintTop_toBottomOf="@id/tv_gender_text" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/color_F0"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_position"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_83"
+                app:layout_constraintTop_toBottomOf="@id/ctl_company">
+
+                <TextView
+                    android:id="@+id/tv_bron_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_10"
+                    android:text="公司行业"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/ts_14" />
+
+                <TextView
+                    android:id="@+id/tv_position"
+                    style="@style/boss_info_edit_text"
+                    android:hint="请选择公司行业"
+                    app:layout_constraintTop_toBottomOf="@id/tv_bron_text" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/color_F0"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_mode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_83"
+                app:layout_constraintTop_toBottomOf="@id/ctl_position">
+
+                <TextView
+                    android:id="@+id/tv_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_10"
+                    android:text="人员规模"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/ts_14" />
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    style="@style/boss_info_edit_text"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:hint="请选择公司规模"
+                    app:layout_constraintTop_toBottomOf="@id/tv_people" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/color_F0"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_up_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_83"
+                app:layout_constraintTop_toBottomOf="@id/ctl_mode">
+
+                <TextView
+                    android:id="@+id/tv_trading_certificate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_10"
+                    android:text="营业执照"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/ts_14" />
+
+                <TextView
+                    android:id="@+id/tv_trading_certificate_status"
+                    style="@style/boss_info_edit_text"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:hint="请上传营业执照"
+                    app:layout_constraintTop_toBottomOf="@id/tv_trading_certificate" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/color_F0"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_110"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ctl_up_image">
+
+                <TextView
+                    android:id="@+id/tv_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:background="@drawable/shape_gray_job_normal_rectangle"
+                    android:gravity="center"
+                    android:text="下一步"
+                    android:textColor="@color/color_D0D0D0"
+                    android:textSize="@dimen/ts_14"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_root"
+    android:layout_width="160dp"
+    android:layout_height="160dp"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_vertical_toast"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/xtoast_icon"
+        android:layout_width="92dp"
+        android:layout_height="71dp"
+        android:background="@drawable/jinbi" />
+
+    <TextView
+        android:id="@+id/xtoast_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:maxLines="2"
+        android:textColor="#FBE945"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/xtoast_text2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:maxLines="2"
+        android:textColor="#FBE945"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="继续赚取更多"
+        android:textColor="#FBE945"
+        android:textSize="13sp" />
+
+</LinearLayout>

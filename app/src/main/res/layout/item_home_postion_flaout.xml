@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView android:layout_width="wrap_content"
+        android:text="22222222"
+        android:padding="@dimen/dp_4"
+        style="@style/text_fu_12"
+        android:layout_marginRight="@dimen/dp_10"
+        android:id="@+id/tv_item_flayout_content"
+        android:background="@drawable/gm_4_gray_bg_circle"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

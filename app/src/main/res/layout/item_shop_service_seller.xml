@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/margin_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="附近商家"
+            android:textColor="@color/color_444A53"
+            android:textSize="@dimen/ts_18"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/text_fu_12"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:gravity="bottom"
+            android:text="精选优质商家" />
+
+        <TextView
+            android:id="@+id/tv_shop_more"
+            style="@style/text_main_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/jft_but_arrow"
+            android:drawablePadding="@dimen/dp_6"
+            android:gravity="right"
+            android:text="更多商家" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_shop_service_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

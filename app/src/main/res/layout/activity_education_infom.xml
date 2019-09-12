@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".ui.recruit.infom.EducationInfomActivity">
+
+    <include layout="@layout/gm_title_right" />
+
+    <ScrollView
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16">
+
+            <TextView
+                style="@style/text_main_22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="教育经历"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/text_fu_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="详细的教育经历能为简历加分哦" />
+
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_16"
+                android:gravity="center_vertical"
+                android:text="学校名称" />
+
+            <EditText
+                style="@style/text_main_15"
+                android:id="@+id/et_education_school"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:maxLength="40"
+                android:background="@color/transparent"
+                android:drawableRight="@mipmap/jft_but_arrow"
+                android:gravity="center_vertical"
+                android:hint="请填写学校名称" />
+
+            <View style="@style/line_height_one" />
+
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_8"
+                android:gravity="center_vertical"
+                android:text="学历" />
+
+            <TextView
+                style="@style/text_main_15"
+                android:id="@+id/tv_education_education"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:drawableRight="@mipmap/jft_but_arrow"
+                android:gravity="center_vertical"
+                android:hint="请选择学历" />
+
+            <View style="@style/line_height_one" />
+
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_8"
+                android:gravity="center_vertical"
+                android:text="所学专业" />
+
+            <EditText
+                android:background="@color/transparent"
+                android:id="@+id/et_education_specialty"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                style="@style/text_main_15"
+                android:maxLength="40"
+                android:drawableRight="@mipmap/jft_but_arrow"
+                android:gravity="center_vertical"
+                android:hint="请填写专业名称" />
+
+            <View style="@style/line_height_one" />
+
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_8"
+                android:gravity="center_vertical"
+                android:text="开始时间" />
+
+            <TextView
+                android:id="@+id/tv_education_starttime"
+                style="@style/text_main_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:drawableRight="@mipmap/jft_but_arrow"
+                android:gravity="center_vertical"
+                android:hint="请选择开始时间" />
+
+            <View style="@style/line_height_one" />
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_8"
+                android:gravity="center_vertical"
+                android:text="结束时间" />
+
+            <TextView
+                android:id="@+id/tv_education_endtime"
+                style="@style/text_main_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:drawableRight="@mipmap/jft_but_arrow"
+                android:gravity="center_vertical"
+                android:hint="请选择结束时间" />
+
+            <View style="@style/line_height_one" />
+         <RelativeLayout
+             android:layout_marginBottom="@dimen/dp_30"
+             android:layout_marginTop="@dimen/dp_30"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+            <Button
+                style="@style/text_fu_14"
+                android:text="下一步"
+                android:background="@drawable/gm_4_gray_bg_circle"
+                android:id="@+id/btn_education_go"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40" />
+
+         </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

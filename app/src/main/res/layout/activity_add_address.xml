@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.mine.address.AddAddressActivity">
+
+    <include layout="@layout/gm_title" />
+
+    <View style="@style/line_height_one" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_main_14"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_48"
+            android:gravity="center_vertical"
+            android:text="收  货 人  :" />
+
+        <EditText
+            android:id="@+id/et_a_d_name"
+            style="@style/text_main_14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1"
+            android:maxLength="20"
+            android:background="@color/transparent"
+            android:hint="请输入真实姓名"
+            android:text="" />
+    </LinearLayout>
+
+    <View style="@style/line_height_one" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_main_14"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_48"
+            android:gravity="center_vertical"
+            android:text="手机号码:" />
+
+        <EditText
+            android:id="@+id/et_a_d_phone"
+            style="@style/text_main_14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:text="" />
+    </LinearLayout>
+
+    <View style="@style/line_height_one" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_main_14"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_48"
+            android:gravity="center_vertical"
+            android:text="所在地区:" />
+
+        <TextView
+            android:id="@+id/tv_a_d_area"
+            style="@style/text_main_14"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:drawableRight="@mipmap/jft_but_arrow"
+            android:gravity="center_vertical"
+            android:hint="请选择所在地区"
+            android:text="" />
+    </LinearLayout>
+
+    <View style="@style/line_height_one" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_main_14"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:paddingTop="@dimen/dp_16"
+            android:minHeight="@dimen/dp_48"
+            android:text="详细地址:" />
+
+        <EditText
+            android:id="@+id/et_a_d_address"
+            style="@style/text_main_14"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1"
+            android:maxLines="5"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_4"
+            android:maxLength="40"
+            android:background="@color/transparent"
+            android:hint="请输入详细地址"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_a_d_select"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginTop="@dimen/dp_16"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16">
+
+
+            <TextView
+                android:id="@+id/tv_a_d_waring_left"
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设为默认地址" />
+
+            <TextView
+                android:id="@+id/tv_a_d_waring"
+                style="@style/text_fu_12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="（注:每次下单默认使用该地址）" />
+
+            <ImageView
+                android:id="@+id/iv_a_d_select"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_27"
+                android:src="@mipmap/jft_but_noslip" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_a_d_submit"
+            style="@style/btn_17_white"
+            android:text="保存" />
+    </LinearLayout>
+</LinearLayout>

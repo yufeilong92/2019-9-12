@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".ui.activity.home.ShopListActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingBottom="@dimen/dp_4">
+
+        <ImageView
+            android:id="@+id/iv_shoplist_back"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:scaleType="center"
+            android:src="@mipmap/jft_but_back" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_32"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gray_transp_4_raido">
+
+            <ImageView
+                android:id="@+id/iv_moreshop_search"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@mipmap/jft_but_bosshomesearch" />
+
+            <EditText
+                android:id="@+id/et_shop_seacher"
+                style="@style/text_main_13"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/iv_moreshop_search"
+                android:background="@color/transparent"
+                android:hint="请输入您要搜索的商家"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_shop_baidu"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:visibility="invisible"
+            android:paddingRight="@dimen/dp_16"
+            android:scaleType="center"
+            android:src="@mipmap/jft_but_mapredenvelopeicon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_all_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/dp_4"
+                android:text="全部分类" />
+
+            <ImageView
+                android:id="@+id/tv_type_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_type1"
+                android:src="@mipmap/jft_but_inferiortriangle" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_fu_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_type2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="55dp"
+                android:drawablePadding="@dimen/dp_4"
+                android:gravity="center"
+                android:text="附近" />
+
+            <ImageView
+                android:id="@+id/iv_fujin_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_type2"
+                android:src="@mipmap/jft_but_inferiortriangle" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sort_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_type3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/dp_4"
+                android:text="智能排序" />
+
+            <ImageView
+                android:id="@+id/iv_sort_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_type3"
+                android:src="@mipmap/jft_but_inferiortriangle" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color">
+
+        <include
+            layout="@layout/gm_refhres_layout" />
+
+        <RelativeLayout
+            android:id="@+id/rl_show_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlv_select_tag_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:maxHeight="@dimen/dp_200" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_show_sort_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlv_select_sort_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+
+                android:maxHeight="@dimen/dp_200" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

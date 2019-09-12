@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="main_color">#F1F4F8</color>
+    <color name="black">#000000</color>
+    <color name="gray_ed">#ededed</color>
+    <color name="color_555555">#555555</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="color_F85859">#F85859</color>
+    <color name="color_ED772F">#ED772F</color>
+    <color name="color_E7EEF7">#E7EEF7</color>
+    <color name="black_33">#333333</color>
+    <color name="tab_color">#FC6465</color>
+    <color name="color_F3F5F4">#F3F5F4</color>
+    <color name="color_917B7B">#917B7B</color>
+    <color name="normal_btn_end_color">#2473EF</color>
+    <color name="normal_btn_start_color">#63A6FC</color>
+    <color name="normal_btn_line_color">#5584F6</color>
+    <color name="normal_red_btn_start_color">#FF8081</color>
+    <color name="normal_red_btn_end_color">#FB2829</color>
+    <color name="line_color">#E9EEF3</color>
+
+    <color name="normal_text_color">#5584F6</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_F0">#f0f0f0</color>
+    <color name="color_F1">#f1f1f1</color>
+    <color name="gray_f2">#f2f2f2</color>
+    <color name="gray_f7">#f7f7f7</color>
+    <color name="color_f8f8f8">#F8F8F8</color>
+    <color name="color_f9f9f9">#F9F9F9</color>
+    <color name="color_split_line">#C7CFDA</color>
+    <color name="gray_d8">#d8d8d8</color>
+    <color name="color_99">#999999</color>
+    <color name="edit_hint_color">#9CA3AF</color>
+    <color name="gray_dd">#DDDDDD</color>
+    <color name="color_orange">#EF9823</color>
+    <color name="color_FAE587">#FAE587</color>
+    <color name="color_FFECEA">#FFECEA</color>
+    <color name="color_FF781E">#FF781E</color>
+    <color name="gray_f9">#33000000</color>
+    <color name="color_444A53">#444A53</color>
+    <color name="color_7B8391">#7B8391</color>
+    <color name="color_EF9823">#EF9823</color>
+    <color name="color_e1">#E1E1E1</color>
+    <color name="color_696E77">#696E77</color>
+    <color name="color_50566A">#50566A</color>
+    <color name="color_E9EFF7">#E9EFF7</color>
+    <color name="color_D0D0D0">#D0D0D0</color>
+    <color name="color_5769E7">#5769E7</color>
+    <color name="color_A97A3C">#A97A3C</color>
+    <color name="color_323232">#323232</color>
+    <color name="color_33">#333</color>
+    <color name="color_2276EF">#2276EF</color>
+    <color name="color_DDE5EF">#DDE5EF</color>
+    <color name="color_FFEBC9">#FFEBC9</color>
+    <color name="color_FA">#FAFAFA</color>
+    <color name="select_n">#F5F5F5</color>
+    <color name="select_s">#FC6465</color>
+    <color name="select_line">#CFCFCF</color>
+    <color name="color_764B1D">#764B1D</color>
+    <color name="yellow_one">#EF9823</color>
+    <color name="bule">#5769E7</color>
+
+
+    <color name="color_63D376">#63D376</color>
+    <color name="color_E83C4C">#E83C4C</color>
+    <color name="color_5B6A91">#5B6A91</color>
+    <color name="color_DB854E">#DB854E</color>
+    <color name="color_FFD26C">#FFD26C</color>
+    <color name="color_ACB4C2">#ACB4C2</color>
+    <color name="color_gold">#D49D67</color>
+    <color name="lost_gray">#AEB6C4</color>
+    <color name="title_bar_color">#CDDCF6</color>
+    <color name="title_bar_color_end">#EEF1F4</color>
+    <color name="color_red">#FD2E4A</color>
+    <color name="color_green">#13D1BE</color>
+</resources>

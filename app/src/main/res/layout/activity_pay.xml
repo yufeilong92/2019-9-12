@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.mine.money.PayActivity">
+
+    <include
+        android:id="@+id/root_title"
+        layout="@layout/gm_title" />
+
+    <View style="@style/line_height_one" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_pay_values"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="选择支付方式"
+        android:textColor="@color/color_444A53"
+        android:textSize="@dimen/ts_19"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_type_content"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btn_pay_sure"
+        style="@style/text_17_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_16"
+        android:background="@drawable/normal_red_btn_bg"
+        android:text="立即充值" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_fu_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击立即充值，即表示已阅读并同意" />
+
+        <TextView
+            android:id="@+id/tv_pay_agreement"
+            style="@style/text_red_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《充值协议》" />
+    </LinearLayout>
+</LinearLayout>

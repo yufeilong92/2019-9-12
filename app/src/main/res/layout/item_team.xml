@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:background="@drawable/gm_white_4_raido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/dp_10"
+                android:id="@+id/tv_name"
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View style="@style/line_height_one" />
+        <TableLayout
+            android:stretchColumns="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+             <TableRow
+                 >
+                 <TextView
+                     style="@style/text_fu_13"
+                     android:gravity="center_vertical"
+                     android:layout_height="@dimen/dp_30"
+                     android:text="手机号码："/>
+                 <TextView
+                     android:id="@+id/tv_item_team_phone"
+                     style="@style/text_fu_13"
+                     android:gravity="center_vertical"
+                     android:layout_height="@dimen/dp_30"
+                     />
+             </TableRow>
+            <TableRow>
+                <TextView
+                    style="@style/text_fu_13"
+                    android:gravity="center_vertical"
+                    android:layout_height="@dimen/dp_30"
+                    android:text="注册时间："/>
+                <TextView
+                    android:id="@+id/tv_item_team_time"
+                    style="@style/text_fu_13"
+                    android:gravity="center_vertical"
+                    android:layout_height="@dimen/dp_30"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    style="@style/text_fu_13"
+                    android:gravity="center_vertical"
+                    android:layout_height="@dimen/dp_30"
+                    android:text="贡献佣金："/>
+                <TextView
+                    android:id="@+id/tv_item_team_values"
+                    style="@style/text_red_13"
+                    android:gravity="center_vertical"
+                    android:layout_height="@dimen/dp_30"
+                    />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</RelativeLayout>

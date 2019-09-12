@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.recruit.ChangerJobPhoneActivity">
+
+    <include layout="@layout/gm_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_main_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号" />
+
+            <EditText
+                style="@style/text_main_15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:hint="请输入手机号码"
+                android:maxLength="11"
+                android:inputType="phone"
+                android:id="@+id/et_changer_phone"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16" />
+        </LinearLayout>
+
+        <View style="@style/line_height_one" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_main_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验证码" />
+
+            <EditText
+                android:id="@+id/et_changer_code"
+                style="@style/text_main_15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:background="@color/transparent"
+                android:hint="请输入收到的验证码"
+                android:maxLength="11"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16" />
+
+            <View
+                style="@style/line_with_one"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_marginBottom="@dimen/dp_4" />
+
+            <Button
+                android:id="@+id/btn_send_changer_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:text="点击获取"
+                android:textColor="#EF9823"
+                android:textSize="@dimen/ts_13" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="@dimen/dp_16"
+        android:id="@+id/btn_changer_phone"
+        style="@style/btn_15_bule"
+        android:text="完成" />
+</LinearLayout>

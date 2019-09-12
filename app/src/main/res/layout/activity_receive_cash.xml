@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/select_s"
+    tools:ignore="MissingConstraints">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_34"
+        android:text="@string/text_receive_qrcode"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ts_18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_back"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_34"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_title">
+
+        <ImageView
+            android:layout_width="@dimen/dp_11"
+            android:layout_height="@dimen/dp_21"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/jft_but_white_back" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_26"
+            android:layout_marginStart="@dimen/dp_13"
+            android:layout_marginEnd="@dimen/dp_13"
+            android:background="@color/white"
+            android:paddingStart="@dimen/dp_22">
+
+            <TextView
+                android:id="@+id/tv_pay_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_48"
+                android:gravity="center"
+                android:text="@string/text_pay_for_shop"
+                android:textColor="@color/select_s"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_22"
+                android:layout_height="@dimen/dp_23"
+                android:background="@mipmap/jft_icon_collectmoney"
+                app:layout_constraintBottom_toBottomOf="@id/tv_pay_shop"
+                app:layout_constraintTop_toTopOf="@id/tv_pay_shop" />
+
+
+            <TextView
+                android:id="@+id/tv_scan_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_34"
+                android:text="@string/text_scan_pay"
+                android:textColor="@color/color_444A53"
+                android:textSize="@dimen/ts_17"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_pay_shop" />
+
+            <ImageView
+                android:id="@+id/iv_qrcode"
+                android:layout_width="@dimen/dp_179"
+                android:layout_height="@dimen/dp_178"
+                android:layout_marginTop="@dimen/dp_34"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_scan_pay" />
+
+
+            <TextView
+                android:id="@+id/tv_receive_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_30"
+                android:textColor="@color/color_444A53"
+                android:textSize="@dimen/ts_31"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_qrcode"
+                tools:text="￥350" />
+
+
+            <TextView
+                android:id="@+id/tv_set_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_30"
+                android:text="@string/text_set_count"
+                android:textColor="@color/color_5B6A91"
+                android:textSize="@dimen/ts_15"
+                app:layout_constraintLeft_toLeftOf="@id/iv_qrcode"
+                app:layout_constraintTop_toBottomOf="@id/tv_receive_count" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/ts_15"
+                android:background="@color/line_color"
+                app:layout_constraintBottom_toBottomOf="@id/tv_save_qrcode"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_save_qrcode" />
+
+            <TextView
+                android:id="@+id/tv_save_qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_30"
+                android:text="@string/text_save_receive_qrcode"
+                android:textColor="@color/color_5B6A91"
+                android:textSize="@dimen/ts_15"
+                app:layout_constraintLeft_toRightOf="@id/line1"
+                app:layout_constraintTop_toBottomOf="@id/tv_receive_count" />
+
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_22"
+                android:background="@color/line_color"
+                app:layout_constraintTop_toBottomOf="@id/tv_set_clear" />
+
+            <TextView
+                android:id="@+id/tv_receive_record"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_65"
+                android:drawableStart="@mipmap/jft_btn_transferrecords"
+                android:drawableEnd="@mipmap/jft_but_receiptrecordadvances"
+                android:drawablePadding="@dimen/dp_8"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/dp_15"
+                android:text="@string/text_receive_record"
+                android:textColor="@color/color_444A53"
+                android:textSize="@dimen/ts_14"
+                app:layout_constraintTop_toBottomOf="@id/line2" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

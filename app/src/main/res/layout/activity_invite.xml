@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.mine.InviteActivity">
+
+    <include layout="@layout/gm_title" />
+   <ScrollView
+       android:id="@+id/root_view"
+       android:fillViewport="true"
+       android:focusableInTouchMode="true"
+       android:focusable="true"
+       android:overScrollMode="never"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/jft_img_invitationbackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_150"
+            android:background="@mipmap/jft_img_redenvelopes"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_60"
+                style="@style/text_red_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="我的邀请码" />
+
+            <TextView
+                android:id="@+id/tv_ask_code"
+                style="@style/text_red_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_invite_code"
+                android:layout_width="@dimen/dp_129"
+                android:layout_height="@dimen/dp_129"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="长按二维码保存可分享"
+                android:textColor="@color/color_gold"
+                android:textSize="@dimen/ts_15" />
+
+            <ImageView
+                android:id="@+id/iv_invite_ask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_70"
+                android:src="@mipmap/jft_but_invitingbutton" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+   </ScrollView>
+</LinearLayout>

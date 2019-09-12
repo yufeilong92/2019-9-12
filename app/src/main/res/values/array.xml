@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="my_delivery">
+        <item>全部</item>
+        <item>已投递</item>
+        <item>被查看</item>
+        <item>邀面试</item>
+        <item>不合适</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ctl_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ctl_top"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_135"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="@dimen/dp_71"
+            android:layout_height="@dimen/dp_71"
+            android:background="@mipmap/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:text="X街 TSYC"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ts_25"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/iv_logo"
+            app:layout_constraintTop_toTopOf="@id/iv_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:text="TIANSHENGYOUCAI"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ts_16"
+            app:layout_constraintBottom_toBottomOf="@id/iv_logo"
+            app:layout_constraintLeft_toRightOf="@id/iv_logo" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_2276EF">
+
+        <RelativeLayout
+            android:id="@+id/rl_qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingStart="@dimen/dp_27"
+            android:paddingTop="@dimen/dp_54"
+            android:paddingEnd="@dimen/dp_27"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_qrcode"
+                android:layout_width="@dimen/dp_223"
+                android:layout_height="@dimen/dp_223" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_qrcode"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_25"
+                android:paddingBottom="@dimen/dp_24"
+                android:textColor="@color/color_444A53"
+                android:textSize="@dimen/ts_25" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_scan_pay"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_25"
+            app:layout_constraintTop_toBottomOf="@id/rl_qrcode"
+            android:layout_marginTop="@dimen/ts_25"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>

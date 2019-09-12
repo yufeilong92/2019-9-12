@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.mine.PartnerActivity">
+
+    <include layout="@layout/gm_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_120"
+                android:background="@color/main_color">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_100"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/dp_17"
+                    android:layout_marginRight="@dimen/dp_17"
+                    android:background="@mipmap/jft_img_backgroundofopeningpartners"
+                    android:padding="@dimen/dp_16">
+
+                    <TextView
+                        android:id="@+id/tv_partenr_title"
+                        style="@style/text_15_white"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="X街·合伙人" />
+
+                    <TextView
+                        style="@style/text_12_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_partenr_title"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:text="开通后，享受下级所有交易额的百分比提成~" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="购买类型" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="@drawable/bg_partner_qian_yelleo"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_partenr_name"
+                        style="@style/text_main_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="合伙人" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="特惠价￥"
+                        android:textColor="@color/color_ED772F"
+                        android:textSize="@dimen/ts_12" />
+
+                    <TextView
+                        android:id="@+id/tv_partenr_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/color_ED772F"
+                        android:textSize="@dimen/ts_18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_partner_presented"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="@color/color_7B8391"
+                        android:textSize="@dimen/ts_11" />
+
+                    <TextView
+                        android:id="@+id/tv_partner_oldvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/color_7B8391"
+                        android:textSize="@dimen/ts_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_30"
+                android:text="选择支付方式"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ts_19"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_partner_weixin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_16"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_main_16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/jft_icon_wechatpay"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:gravity="center_vertical"
+                    android:text="微信支付" />
+
+                <ImageView
+                    android:id="@+id/iv_pay_weixin"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/jft_btn_duipay_selected" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_height_one"
+                android:layout_marginTop="@dimen/dp_20"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_partner_zhifu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_16"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_main_16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/jft_icon_alipaypay"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:gravity="center_vertical"
+                    android:text="支付宝支付" />
+
+                <ImageView
+                    android:id="@+id/iv_pay_zhifu"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/jft_but_paymentnotselected" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_height_one"
+                android:layout_marginTop="@dimen/dp_20"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_partner_ye"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_16"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_main_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/jft_icon_balancepayment"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:gravity="center_vertical"
+                    android:text="余额支付" />
+
+                <TextView
+                    style="@style/text_fu_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:text="当前余额：" />
+
+                <TextView
+                    android:id="@+id/tv_partner_values"
+                    style="@style/text_red_12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="￥0.0" />
+
+                <ImageView
+                    android:id="@+id/iv_pay_ye"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/jft_but_paymentnotselected" />
+            </LinearLayout>
+
+            <Button
+                android:layout_marginBottom="@dimen/dp_30"
+                android:id="@+id/btn_submit_pay"
+                style="@style/btn_17_white"
+                android:text="确认支付" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

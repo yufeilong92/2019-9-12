@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.tsyc.tianshengyoucai.view.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.tsyc.tianshengyoucai.view.bottombarlayout.BottomBarLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white">
+
+        <com.tsyc.tianshengyoucai.view.bottombarlayout.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/jft_but_home"
+            app:iconSelected="@mipmap/jft_but_home1"
+            app:itemMarginTop="@dimen/dp_2"
+            app:itemText="@string/tab_home"
+            app:itemPadding="@dimen/dp_3"
+            app:itemTextSize="@dimen/ts_13"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/color_99"
+            app:textColorSelected="@color/tab_color"
+            app:touchDrawable="@drawable/selector_bottom_tab" />
+
+        <com.tsyc.tianshengyoucai.view.bottombarlayout.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/jft_but_find"
+            app:iconSelected="@mipmap/jft_but_find1"
+            app:itemMarginTop="@dimen/dp_2"
+            app:itemPadding="@dimen/dp_3"
+            app:itemText="@string/tab_type"
+            app:itemTextSize="@dimen/ts_13"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/color_99"
+            app:textColorSelected="@color/tab_color"
+            app:touchDrawable="@drawable/selector_bottom_tab" />
+
+        <com.tsyc.tianshengyoucai.view.bottombarlayout.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/jft_but_news"
+            app:iconSelected="@mipmap/jft_but_news1"
+            app:itemMarginTop="@dimen/dp_2"
+            app:itemPadding="@dimen/dp_3"
+            app:itemText="@string/tab_msg"
+            app:itemTextSize="@dimen/ts_13"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/color_99"
+            app:textColorSelected="@color/tab_color"
+            app:touchDrawable="@drawable/selector_bottom_tab" />
+
+        <com.tsyc.tianshengyoucai.view.bottombarlayout.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/jft_but_me"
+            app:iconSelected="@mipmap/jft_but_me1"
+            app:itemMarginTop="@dimen/dp_2"
+            app:itemPadding="@dimen/dp_3"
+            app:itemText="@string/tab_me"
+            app:itemTextSize="@dimen/ts_13"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/color_99"
+            app:textColorSelected="@color/tab_color"
+            app:touchDrawable="@drawable/selector_bottom_tab" />
+
+    </com.tsyc.tianshengyoucai.view.bottombarlayout.BottomBarLayout>
+
+</LinearLayout>

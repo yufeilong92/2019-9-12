@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_62"
+    android:gravity="center"
+    tools:ignore="MissingConstraints,RtlSymmetry">
+
+
+    <TextView
+        android:id="@+id/tv_shop_spec"
+        android:layout_width="wrap_content"
+        android:paddingTop="@dimen/dp_10"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_33"
+        android:textSize="@dimen/ts_14"
+        tools:text="@string/text_delete" />
+
+
+    <TextView
+        android:id="@+id/tv_shop_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_7"
+        android:textColor="@color/color_7B8391"
+        android:textSize="@dimen/ts_12"
+        app:layout_constraintTop_toBottomOf="@id/tv_shop_spec"
+        tools:text="@string/text_delete" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".ui.recruit.infom.JobSelectActivity">
+
+    <include layout="@layout/gm_title" />
+
+    <TextView
+        style="@style/text_main_22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="选择职位类型"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/text_fu_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="选择职位名称对应的类型" />
+
+    <TextView
+        style="@style/text_main_14"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_16"
+        android:autoSizeMaxTextSize="@dimen/dp_10"
+        android:background="@color/transparent"
+        android:hint="请选择职位"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16" />
+
+    <View style="@style/line_height_one" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlv_job_content"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16" />
+
+        <LinearLayout
+            android:id="@+id/ll_job_select_layout"
+            android:layout_width="match_parent"
+            android:background="@color/transparent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <View
+                android:id="@+id/iv_job_select_life"
+                android:layout_width="@dimen/dp_70"
+                android:background="@color/black"
+                android:alpha="0.5"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/ll_job_select_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rlv_job_select_life"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:overScrollMode="never"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_8"
+                    android:alpha="1"
+                    android:background="#F5F5F5">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rlv_job_select_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_8"
+                    android:layout_weight="1"
+                    android:overScrollMode="never"
+                    android:alpha="1"
+                    android:background="#FEFEFE" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

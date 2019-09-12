@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".ui.recruit.infom.WorkInfomActivity">
+
+    <include layout="@layout/gm_title_right" />
+
+    <ScrollView
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16">
+
+            <TextView
+                style="@style/text_main_22"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="工作/实习经历"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/text_fu_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="大部分公司关注您的工作/实习经历" />
+
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_30"
+                android:text="公司名称" />
+
+            <EditText
+                android:id="@+id/et_workinfom_companyname"
+                style="@style/text_main_15"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:maxLength="40"
+                android:background="@color/transparent"
+                android:drawableRight="@mipmap/jft_but_arrow"
+                android:gravity="center_vertical"
+                android:hint="请填写公司名称" />
+
+            <View style="@style/line_height_one" />
+
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="在职开始时间" />
+
+            <TextView
+                android:id="@+id/tv_workinfom_starttime"
+                style="@style/text_main_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@color/transparent"
+                android:drawableRight="@mipmap/jft_but_arrow"
+                android:gravity="center_vertical"
+                android:hint="请选择在职时间" />
+
+            <View style="@style/line_height_one" />
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="离职时间" />
+
+            <TextView
+                android:id="@+id/tv_workinfom_endtime"
+                style="@style/text_main_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@color/transparent"
+                android:drawableRight="@mipmap/jft_but_arrow"
+                android:gravity="center_vertical"
+                android:hint="请选择离职时间" />
+
+            <View style="@style/line_height_one" />
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="职位类型" />
+
+            <TextView
+                android:id="@+id/tv_workinfom_type"
+                style="@style/text_main_15"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:background="@color/transparent"
+                android:drawableRight="@mipmap/jft_but_arrow"
+                android:gravity="center_vertical"
+                android:hint="请选择职位类型" />
+
+            <View style="@style/line_height_one" />
+
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="工作内容" />
+
+            <EditText
+                android:id="@+id/et_workinfom_infom"
+                style="@style/text_main_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:minWidth="@dimen/dp_48"
+                android:background="@color/transparent"
+                android:drawableRight="@mipmap/jft_but_arrow"
+                android:gravity="center_vertical"
+                android:hint="请填写您在公司的工作内容" />
+
+            <View style="@style/line_height_one" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/btn_workinfom_go"
+                    style="@style/text_fu_13"
+                    android:background="@drawable/gm_4_gray_bg_circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_centerInParent="true"
+                    android:text="下一步" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

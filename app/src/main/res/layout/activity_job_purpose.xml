@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".ui.recruit.infom.JobPurposeActivity">
+
+    <include layout="@layout/gm_title" />
+
+    <ScrollView
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16">
+
+            <TextView
+                style="@style/text_main_22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="求职意向"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/text_fu_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="根据求职意向为您推荐相关职位" />
+
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="工作性质" />
+
+            <TextView
+                android:id="@+id/tv_jobpurpose_nature"
+                style="@style/text_main_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_10"
+                android:drawableRight="@mipmap/jft_but_arrow"
+                android:gravity="center_vertical"
+                android:hint="请选择工作性质" />
+
+            <View style="@style/line_height_one" />
+
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="求职状态" />
+
+            <TextView
+                android:id="@+id/tv_jobpurpose_status"
+                style="@style/text_main_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_10"
+                android:drawableRight="@mipmap/jft_but_arrow"
+                android:gravity="center_vertical"
+                android:hint="请选择求职状态" />
+
+            <View style="@style/line_height_one" />
+
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="期望职位" />
+
+            <TextView
+                android:id="@+id/tv_jobpurpose_post"
+                style="@style/text_main_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_10"
+                android:drawableRight="@mipmap/jft_but_arrow"
+                android:gravity="center_vertical"
+                android:hint="请选择期望职位" />
+
+            <View style="@style/line_height_one" />
+
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="期望行业" />
+
+            <TextView
+                android:id="@+id/tv_jobpurpose_trade"
+                style="@style/text_main_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_10"
+                android:drawableRight="@mipmap/jft_but_arrow"
+                android:gravity="center_vertical"
+                android:hint="请选择期望行业" />
+
+            <View style="@style/line_height_one" />
+
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="薪资要求" />
+
+            <TextView
+                android:id="@+id/tv_jobpurpose_money"
+                style="@style/text_main_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_10"
+                android:drawableRight="@mipmap/jft_but_arrow"
+                android:gravity="center_vertical"
+                android:hint="请选择薪资要求" />
+
+            <View style="@style/line_height_one" />
+
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="工作地点" />
+
+            <TextView
+                android:id="@+id/tv_jobpurpose_addree"
+                style="@style/text_main_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_10"
+                android:drawableRight="@mipmap/jft_but_arrow"
+                android:gravity="center_vertical"
+                android:hint="请选择工作地点" />
+
+            <View style="@style/line_height_one" />
+
+            <RelativeLayout
+                android:layout_marginBottom="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn_jobpurpose_go"
+                    style="@style/text_fu_14"
+                    android:background="@drawable/gm_4_gray_bg_circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_centerInParent="true"
+                    android:text="下一步" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

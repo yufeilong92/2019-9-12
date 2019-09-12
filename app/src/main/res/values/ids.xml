@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 控件 id-->
+    <item name="multiple_status_view" type="id"/>
+    <!--空视图 id-->
+    <item name="empty_view" type="id"/>
+    <item name="empty_view_tv" type="id"/>
+    <!--加载错误视图 id-->
+    <item name="error_view" type="id"/>
+    <item name="error_view_tv" type="id"/>
+    <!--没有网络视图 id-->
+    <item name="no_network_view" type="id"/>
+    <item name="no_network_view_tv" type="id"/>
+
+    <!-- 标题-->
+    <item name="toolbar" type="id"/>
+    <item name="tv_title" type="id"/>
+
+</resources>

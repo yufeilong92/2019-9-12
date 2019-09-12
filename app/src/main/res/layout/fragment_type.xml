@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.TypeFragment">
+
+    <include
+        layout="@layout/gm_title" />
+
+    <LinearLayout
+        android:background="@color/main_color"
+        android:id="@+id/rool_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="0dp"
+            android:overScrollMode="never"
+            android:id="@+id/rlv_type_title"
+            android:layout_height="match_parent"
+            android:layout_weight="0.24">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <FrameLayout
+            android:background="@color/white"
+            android:id="@+id/fl_type_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.76" />
+
+    </LinearLayout>
+</LinearLayout>

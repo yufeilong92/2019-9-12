@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40"
+    android:layout_marginTop="@dimen/dp_10"
+    tools:ignore="MissingConstraints">
+
+
+    <EditText
+        android:id="@+id/et_key"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_39"
+        android:background="@drawable/shape_gray_rectangle"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+
+        android:padding="@dimen/dp_10"
+        android:hint="属性名称"
+        android:textColor="@color/color_444A53"
+        android:maxLength="8"
+        android:textSize="@dimen/ts_15"
+        app:layout_constraintHorizontal_weight="0.8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/et_value" />
+
+    <EditText
+        android:id="@+id/et_value"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_39"
+        android:layout_marginStart="@dimen/dp_8"
+        android:background="@drawable/shape_gray_rectangle"
+        android:gravity="center_vertical"
+        android:maxLength="8"
+        android:hint="属性值"
+        android:singleLine="true"
+
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/color_444A53"
+        android:textSize="@dimen/ts_15"
+        app:layout_constraintHorizontal_weight="0.8"
+        app:layout_constraintLeft_toRightOf="@id/et_key"
+        app:layout_constraintRight_toLeftOf="@id/rl_delete"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_delete"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="match_parent"
+        android:gravity="right|center_vertical"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/jft_but_specificationclosed" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

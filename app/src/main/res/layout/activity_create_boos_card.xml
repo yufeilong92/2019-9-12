@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:ignore="MissingConstraints">
+
+    <include layout="@layout/toolbar_normal_title" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingEnd="@dimen/dp_16">
+
+            <TextView
+                android:id="@+id/tv_boss_one_choose_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_20"
+                android:text="@string/text_choose_role"
+                android:textColor="@color/color_444A53"
+                android:textSize="@dimen/ts_22"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="向求职者介绍下自己吧"
+                android:textColor="@color/color_7B8391"
+                android:textSize="@dimen/ts_13"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_boss_one_choose_role" />
+
+            <ImageView
+                android:id="@+id/iv_boss_one_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_60"
+                android:background="@mipmap/jft_but_resumeuploadavatar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_boss_one_choose_role" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_boss_one_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_30"
+                app:layout_constraintTop_toBottomOf="@id/iv_boss_one_header">
+
+                <TextView
+                    android:id="@+id/tv_boss_one_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_10"
+                    android:text="@string/text_job_name"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/ts_14" />
+
+                <EditText
+                    android:id="@+id/et_boss_one_real_name"
+                    style="@style/boss_info_edit_text"
+                    android:hint="@string/hint_req_job_name"
+                    app:layout_constraintTop_toBottomOf="@id/tv_boss_one_name" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/color_F0"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_boss_one_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ctl_boss_one_name">
+
+                <TextView
+                    android:id="@+id/tv_boss_one_gender_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_10"
+                    android:text="我的公司"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/ts_14" />
+
+                <TextView
+                    android:id="@+id/tv_boss_one_company"
+                    style="@style/boss_info_edit_text"
+                    android:hint="您当前就职的公司全称"
+                    app:layout_constraintTop_toBottomOf="@id/tv_boss_one_gender_text" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/color_F0"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_boss_one_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ctl_boss_one_company">
+
+                <TextView
+                    android:id="@+id/tv_boss_one_bron_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_10"
+                    android:text="我的职位"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/ts_14" />
+
+                <EditText
+                    android:id="@+id/et_boss_one_position"
+                    style="@style/boss_info_edit_text"
+                    android:hint="请填写您的职务"
+                    app:layout_constraintTop_toBottomOf="@id/tv_boss_one_bron_text" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/color_F0"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_boss_one_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ctl_boss_one_position">
+
+                <TextView
+                    android:id="@+id/tv_boss_one_work_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_10"
+                    android:text="我的邮箱"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/ts_14" />
+
+                <EditText
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/et_boss_one_email"
+                    style="@style/boss_info_edit_text"
+                    android:hint="请填写邮箱（用于接收简历与通知）"
+                    app:layout_constraintTop_toBottomOf="@id/tv_boss_one_work_text" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/color_F0"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_110"
+                app:layout_constraintTop_toBottomOf="@id/ctl_boss_one_email">
+
+                <Button
+                    android:id="@+id/btn_boss_one_next"
+                    style="@style/text_fu_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:background="@drawable/shape_gray_job_normal_rectangle"
+                    android:gravity="center"
+                    android:text="@string/text_next_step"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical"
+    tools:context=".ui.activity.mine.bank.AddBankActivity">
+
+    <include layout="@layout/gm_title_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16">
+
+            <TextView
+                style="@style/text_main_16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="真实姓名" />
+
+            <EditText
+                android:id="@+id/et_add_bank_name"
+                style="@style/text_main_14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="请输入真实姓名"
+                android:text="" />
+        </LinearLayout>
+
+        <View style="@style/line_height_one" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16">
+
+            <TextView
+                style="@style/text_main_16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="身份证号" />
+
+            <EditText
+                android:id="@+id/et_add_bank_idcard"
+                style="@style/text_main_14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="请输入身份证号码"
+                android:inputType="textEmailAddress"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/iv_show_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dp_5"
+                android:background="@drawable/jft_show_card" />
+        </LinearLayout>
+
+        <View style="@style/line_height_one" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16">
+
+            <TextView
+                style="@style/text_main_16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="银行卡号" />
+
+            <EditText
+                android:id="@+id/et_add_bank_idnumber"
+                style="@style/text_main_14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="输入银行卡卡号"
+                android:inputType="number"
+                android:maxLength="20" />
+
+            <ImageView
+                android:id="@+id/iv_show_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dp_5"
+                android:background="@drawable/jft_show_card" />
+        </LinearLayout>
+
+        <View style="@style/line_height_one" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16">
+
+            <TextView
+                style="@style/text_main_16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="所属银行" />
+
+            <TextView
+                android:id="@+id/et_add_bank_idtheir"
+                style="@style/text_main_14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="点击获取发卡行名称" />
+        </LinearLayout>
+
+        <View style="@style/line_height_one" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16">
+
+            <TextView
+                style="@style/text_main_16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="手机号码" />
+
+            <EditText
+                android:id="@+id/et_add_bank_phone"
+                style="@style/text_main_14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="请输入银行预留手机号码"
+                android:inputType="number"
+                android:maxLength="11" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add_bank_submit"
+        style="@style/text_17_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_16"
+        android:background="@drawable/normal_red_btn_bg"
+        android:text="立即绑定" />
+
+    <TextView
+        style="@style/text_fu_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="当前支持绑定的银行：" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:text="中国农业银行，中国工商银行，中国建设银行，中国银行，交
+通银行，平安银行，中国光大银行，中信银行，兴业银行，上
+海浦东发展银行，中国民生银行，华夏银行，北京银行。" />
+</LinearLayout>

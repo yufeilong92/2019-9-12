@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/root_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_dialog_top_circle_white"
+        app:layout_constraintBottom_toBottomOf="@id/btn_dialog_sure"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/iv_dialog_picture"
+        android:layout_width="@dimen/dp_84"
+        android:layout_height="@dimen/dp_84"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_8"
+        app:layout_constraintLeft_toLeftOf="@id/root_bg"
+        app:layout_constraintTop_toTopOf="@id/root_bg" />
+
+    <TextView
+        android:id="@+id/tv_dialog_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:text=""
+        android:textColor="@color/tab_color"
+        android:textSize="@dimen/ts_17"
+        app:layout_constraintBottom_toTopOf="@id/tv_dialog_number"
+        app:layout_constraintLeft_toRightOf="@id/iv_dialog_picture" />
+
+    <TextView
+        android:id="@+id/tv_dialog_numberlife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:text="库存"
+        android:textSize="@dimen/ts_15"
+        app:layout_constraintBottom_toBottomOf="@id/tv_dialog_number"
+        app:layout_constraintLeft_toRightOf="@id/iv_dialog_picture"
+        app:layout_constraintRight_toLeftOf="@id/tv_dialog_number"
+        app:layout_constraintTop_toTopOf="@id/tv_dialog_number" />
+
+    <TextView
+        android:id="@+id/tv_dialog_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/tab_color"
+        android:textSize="@dimen/ts_15"
+        app:layout_constraintBottom_toBottomOf="@id/iv_dialog_picture"
+        app:layout_constraintLeft_toRightOf="@id/tv_dialog_numberlife" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="件"
+        android:textSize="@dimen/ts_15"
+        app:layout_constraintBottom_toBottomOf="@id/tv_dialog_number"
+        app:layout_constraintLeft_toRightOf="@id/tv_dialog_number"
+        app:layout_constraintTop_toTopOf="@id/tv_dialog_number" />
+
+    <ImageView
+        android:id="@+id/iv_dialog_colose"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:src="@mipmap/jft_but_close"
+        app:layout_constraintRight_toRightOf="@id/root_bg"
+        app:layout_constraintTop_toTopOf="@id/root_bg" />
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/line_height_one"
+        android:layout_marginTop="@dimen/dp_16"
+        app:layout_constraintLeft_toLeftOf="@id/root_bg"
+        app:layout_constraintRight_toRightOf="@id/root_bg"
+        app:layout_constraintTop_toBottomOf="@id/iv_dialog_picture" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="@dimen/dp_300"
+        android:id="@+id/rlv_content"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        app:layout_constraintLeft_toLeftOf="@id/root_bg"
+        app:layout_constraintTop_toBottomOf="@id/view_line" />
+     <View
+        android:id="@+id/view_line_two"
+        style="@style/line_height_one"
+        android:layout_marginTop="@dimen/dp_16"
+        app:layout_constraintLeft_toLeftOf="@id/root_bg"
+        app:layout_constraintRight_toRightOf="@id/root_bg"
+        app:layout_constraintTop_toBottomOf="@id/rlv_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="数量"
+        app:layout_constraintLeft_toLeftOf="@id/root_bg"
+        app:layout_constraintTop_toBottomOf="@id/view_line_two" />
+
+    <TextView
+        android:id="@+id/tv_dialog_subtract"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@drawable/bg_dialog_gray_select"
+        android:gravity="center"
+        android:text="-"
+        android:textSize="@dimen/ts_17"
+        app:layout_constraintRight_toLeftOf="@id/tv_dialog_select_number"
+        app:layout_constraintTop_toBottomOf="@id/view_line_two" />
+
+    <TextView
+        android:id="@+id/tv_dialog_select_number"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@drawable/bg_dialog_white_select"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/color_444A53"
+        android:textSize="@dimen/ts_17"
+        app:layout_constraintRight_toLeftOf="@id/tv_dialog_add"
+        app:layout_constraintTop_toBottomOf="@id/view_line_two" />
+
+    <TextView
+        android:id="@+id/tv_dialog_add"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/bg_dialog_gray_select"
+        android:gravity="center"
+        android:text="+"
+        android:textSize="@dimen/ts_17"
+        app:layout_constraintRight_toRightOf="@id/root_bg"
+        app:layout_constraintTop_toBottomOf="@id/view_line_two" />
+
+    <Button
+        android:id="@+id/btn_dialog_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@color/tab_color"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ts_17"
+        app:layout_constraintTop_toBottomOf="@id/tv_dialog_select_number" />
+</android.support.constraint.ConstraintLayout>

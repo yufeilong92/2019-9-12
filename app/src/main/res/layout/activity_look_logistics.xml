@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:ignore="MissingConstraints">
+
+    <include
+        android:id="@+id/root_title"
+        layout="@layout/toolbar_normal_title" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ctl_logistics"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_93"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/shape_white_rectangle"
+        android:padding="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/root_title">
+
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/dp_54"
+            android:layout_height="@dimen/dp_54"
+            android:background="@mipmap/jft_img_logisticsicon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:text="承运公司："
+            android:textColor="@color/color_7B8391"
+            android:textSize="@dimen/ts_13"
+            app:layout_constraintLeft_toRightOf="@id/iv_icon"
+            app:layout_constraintTop_toTopOf="@id/iv_icon" />
+
+        <TextView
+            android:id="@+id/tv_logist_company"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/ts_13"
+            android:textColor="@color/color_444A53"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            app:layout_constraintBottom_toBottomOf="@id/tv_name"
+            app:layout_constraintLeft_toRightOf="@id/tv_name"
+            app:layout_constraintTop_toTopOf="@id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快递单号："
+            android:textColor="@color/color_7B8391"
+            android:textSize="@dimen/ts_13"
+            android:layout_marginStart="@dimen/dp_20"
+            app:layout_constraintBottom_toBottomOf="@id/iv_icon"
+            app:layout_constraintLeft_toRightOf="@id/iv_icon" />
+
+        <TextView
+            android:id="@+id/tv_order_sn"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/ts_13"
+            android:textColor="@color/color_444A53"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            app:layout_constraintBottom_toBottomOf="@id/tv_sn"
+            app:layout_constraintLeft_toRightOf="@id/tv_sn"
+            app:layout_constraintTop_toTopOf="@id/tv_sn" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.classic.common.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/main_color"
+        android:layout_marginTop="@dimen/dp_13"
+        app:emptyView="@layout/custom_empty_view"
+        app:errorView="@layout/custom_error_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ctl_logistics"
+        app:loadingView="@layout/custom_loading_view"
+        app:noNetworkView="@layout/custom_no_network_view">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_white_rectangle"
+            android:overScrollMode="never"
+            tools:listitem="@android:layout/simple_list_item_2" />
+
+    </com.classic.common.MultipleStatusView>
+
+</android.support.constraint.ConstraintLayout>

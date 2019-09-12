@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/tv_tarde_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:background="@drawable/gm_circle_blue_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_4"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_4"
+            android:text="2222222"
+            android:textColor="@color/color_5769E7" />
+
+    <ImageView
+        android:id="@+id/iv_trade_delect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginRight="@dimen/dp_2"
+        android:layout_toRightOf="@id/tv_tarde_tag"
+        android:src="@mipmap/jft_icon_subtract" />
+
+</RelativeLayout>

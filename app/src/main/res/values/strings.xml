@@ -1,0 +1,679 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name" translatable="false">X街</string>
+    <!--修改用户密码-->
+    <string name="http_changpaw">api/Memberaccount/modify_password</string>
+    <!--修改手机号-->
+    <string name="http_changphone">api/Memberaccount/modify_mobile</string>
+    <!--修改密码-->
+    <string name="http_pay_psw">api/Memberaccount/payment_password</string>
+    <!--用户信息-->
+    <string name="http_userinfom">api/Member/index</string>
+    <!--我的金币-->
+    <string name="http_money">api/member/my_balance</string>
+    <!--银行列表-->
+    <string name="http_bank_list">api/memberaccount/getBankList</string>
+    <!--我的银行列表-->
+    <string name="http_my_bank_list">api/memberaccount/bankCardList</string>
+    <!--头像昵称-->
+    <string name="http_submit_hear_nick">api/member/modifyAvatarNickName</string>
+    <!--我的红包-->
+    <string name="http_my_red_packer">api/member/myRedPacket</string>
+    <!--收货地址列表-->
+    <string name="http_my_address_lsit">api/Memberaddress/address_list</string>
+    <!--新增收货地址-->
+    <string name="http_add_address">api/Memberaddress/address_add</string>
+    <!--编辑收货地址-->
+    <string name="http_make_address">api/Memberaddress/address_edit</string>
+    <!--删除收货地址-->
+    <string name="http_delete_address">api/Memberaddress/address_del</string>
+    <!--合伙人购买价格-->
+    <string name="http_partner_info">api/member/partner_info</string>
+    <!--图片上传(副本)-->
+    <string name="http_upload_image">api/Member/upload_image</string>
+    <!--我的收藏-->
+    <string name="http_my_collect">api/member/myFavorites</string>
+    <!--更多商家列表-排序分类-->
+    <string name="http_more_shop">api/merchant_service/shopTypeList</string>
+    <!--更多商家筛选-->
+    <string name="http_shop_list">api/merchant_service/shopList</string>
+    <!--取消收藏-->
+    <string name="http_canner_collect">api/merchant_service/favorites_del</string>
+
+    <!--商品评价列表-商品详情-->
+    <string name="http_evaluate_list">api/goods/goods_evaluates</string>
+    <!--注册-->
+    <string name="http_invite_regitst">api/Connect/sms_register.html</string>
+    <!--消息列表-->
+    <string name="http_msg_list">api/member_message/lists</string>
+    <!--商品分类-->
+    <string name="http_home_type">api/index/category</string>
+    <!--首页搜索-->
+    <string name="http_home_seach">api/goods/find</string>
+    <!--微信登陆-->
+    <string name="http_weixin_login">api/Wxlogin/getUserAccessUserInfo</string>
+
+    <!--我的团队-->
+    <string name="http_my_tream">api/member/myTeam</string>
+    <!--微信登陆绑定手机号-->
+    <string name="http_bind_weixin">api/Wxlogin/bindUserMobile</string>
+    <!--添加银行卡-->
+    <string name="http_bind_bank">api/memberaccount/bindBankCard</string>
+    <!--我的优惠卷-->
+    <string name="http_my_voucher">api/member/my_voucher</string>
+    <!--绑定/修改支付宝-->
+    <string name="http_bind_alipay">api/memberaccount/bindAlipay</string>
+    <!--个人资料-我的支付宝-->
+    <string name="http_my_alipay">api/memberaccount/my_alipay</string>
+    <!--合伙人购买订单提交-->
+    <string name="http_partner_submit_order">api/member/partner_submit_order</string>
+    <!--app升级接口-->
+    <string name="http_update">api/Index/update</string>
+    <!--商家首页-->
+    <string name="http_shop_service">api/merchant_service/index</string>
+
+    <!--删除消息-->
+    <string name="http_delete_msg">api/member_message/del_msg</string>
+
+    <!--投诉建议-->
+    <string name="suggesst">api/Memberfeedback/feedback_add</string>
+    <!--帮助列表-->
+    <string name="http_help_list">api/help/lists</string>
+    <!--帮助详情-->
+    <string name="http_help_detail">api/help/detail</string>
+    <!--解绑微信-->
+    <string name="http_delete_weixin">api/member/unbindWeChat</string>
+    <!--未读消息-->
+    <string name="http_msg_number">api/member_message/hasNewMsg</string>
+    <!--充值或支付方式-->
+    <string name="http_payment">api/index/payment_type</string>
+    <!--余额充值-->
+    <string name="http_recharge_amount">api/member/recharge_amount</string>
+    <!--我的金币-->
+    <string name="http_gold_coin">api/member/my_gold_coin</string>
+    <!--    支付宝解绑-->
+    <string name="http_unbindAlipay">api/memberaccount/unbindAlipay</string>
+    <!--    个人中心-绑定微信-->
+    <string name="http_bind_weixinmine">api/member/bindWeChat</string>
+    <!--    删除银行卡-->
+    <string name="http_jobs_deleteCard">api/memberaccount/delbankcard</string>
+    <!--    编辑银行卡信息-->
+    <string name="http_jobs_editbankcard">api/memberaccount/editbankcard</string>
+    <!--    我的客服-->
+    <string name="http_jobs_MyService">api/customerservice/logs</string>
+
+    <!--=============招聘模块=============-->
+    <!--添加、编辑用户基本信息（一-->
+    <string name="http_addBaseInfo">api/recruit.user_cv/addBaseInfo</string>
+    <!--职位大全-->
+    <string name="http_positions">api/recruit.cominfo/positions</string>
+    <!--行业大全-->
+    <string name="http_industries">api/recruit.cominfo/industries</string>
+    <!--   招聘模块入口-->
+    <string name="http_recruithome_in">api/recruit.enter/index</string>
+    <!--    求职者消息板块列表页面初始化内容-->
+    <string name="http_re_employee">api/recruit.talk/employee_list_init</string>
+    <!--    求职首页轮播图-->
+    <string name="http_jobs_banner">api/recruit.employee_home/adv</string>
+    <!--    推荐职位-->
+    <string name="http_jobs_recommend">api/recruit.employee_home/position_recommend</string>
+    <!--    通用选项卡 key-value-->
+    <string name="http_jobs_CommonKeys">api/recruit.cominfo/getCommonKeys</string>
+    <!--    选择/切换身份-->
+    <string name="http_jobs_changeIdentity">api/recruit.enter/changeIdentity</string>
+    <!--    添加教育经历（二）-->
+    <string name="http_jobs_addEducation">api/recruit.user_cv/addEducation</string>
+    <!--    编辑教育经历-->
+    <string name="http_jobs_editEducation">api/recruit.user_cv/editEducation</string>
+    <!--    编辑工作经历-->
+    <string name="http_jobs_editWorkExperience">api/recruit.user_cv/editWorkExperience</string>
+    <!--    添加工作经历（三）-->
+    <string name="http_jobs_addWorkExperience">api/recruit.user_cv/addWorkExperience</string>
+    <!--    添加、编辑求职意向（四）-->
+    <string name="http_jobs_addExpectJobInfo">api/recruit.user_cv/addExpectJobInfo</string>
+    <!--    添加、编辑个人评价（五）-->
+    <string name="http_jobs_addSelfAssessment">api/recruit.user_cv/addSelfAssessment</string>
+    <!--    我的投递列表-->
+    <string name="http_jobs_sendList">api/recruit.employee/sendList</string>
+    <!--    隐私设置-->
+    <string name="http_jobs_setting">api/recruit.employee/setting</string>
+    <!--    修改绑定手机号-->
+    <string name="http_jobs_changeMobile">api/recruit.employee/changeMobile</string>
+    <!--    验证绑定手机号-->
+    <string name="http_jobs_changeinfomMobile">api/recruit.user_cv/checkMobile</string>
+    <!--    修改绑定邮箱-->
+    <string name="http_jobs_changeEmail">api/recruit.employee/changeEmail</string>
+    <!--    隐藏显示简历-->
+    <string name="http_jobs_changeState">api/recruit.employee/changeState</string>
+    <!--    求职者个人中心-->
+    <string name="http_jobs_rcmin">api/recruit.employee/index</string>
+    <!--    简历详情-->
+    <string name="http_jobs_myCV">api/recruit.user_cv/myCV</string>
+    <!--    删除工作经历-->
+    <string name="http_jon_delWorkExperience">api/recruit.user_cv/delWorkExperience</string>
+    <!--    删除教育经历-->
+    <string name="http_jon_delEducation">api/recruit.user_cv/delEducation</string>
+    <!--    职位收藏列表-->
+    <string name="http_jon_my_like">api/recruit.position_like/my_like</string>
+    <!--    取消职位收藏-->
+    <string name="http_jon_canceljob">api/recruit.position_like/cancel</string>
+    <!--    编辑求职状态-->
+    <string name="http_jon_editCurrentStatus">api/recruit.user_cv/editCurrentStatus</string>
+    <!--    职位详情-->
+    <string name="http_boss_position_detail">api/recruit.employee_home/position_detail</string>
+    <!--    添加职位收藏-->
+    <string name="http_boss_position_add">api/recruit.position_like/add</string>
+    <!--    取消职位收藏-->
+    <string name="http_boss_position_cancel">api/recruit.position_like/cancel</string>
+    <!--    举报公司-->
+    <string name="http_boss_company_report">api/recruit.employee_home/company_report</string>
+    <!--    投递简历-->
+    <string name="http_boss_cv_send">api/recruit.employee_home/cv_send</string>
+    <!--    附近职位-->
+    <string name="http_boss_nearest_position">api/recruit.employee_home/nearest_position</string>
+    <!--    全职、兼职、全部职位-->
+    <string name="http_boss_position_list">api/recruit.employee_home/position_list</string>
+    <!--    职位搜索-->
+    <string name="http_boss_position_search">api/recruit.employee_home/position_search</string>
+    <!--    求职者向boss发起沟通对话-->
+    <string name="http_boss_employee_start_talk">api/recruit.talk/employee_start_talk</string>
+
+    <!--    求职者端单个对话沟通页面初始化-->
+    <string name="http_boss_employee_talk_init">api/recruit.talk/employee_talk_init</string>
+    <!--    投递记录详情-->
+    <string name="http_job_sendDetail">api/recruit.employee/sendDetail</string>
+
+
+    <!--===================boss============================-->
+    <!--    添加boss基本信息（一）-->
+    <string name="http_boss_addBaseinfo">api/recruit.boss_info/addBaseinfo</string>
+    <!--    根据公司名称查询公司信息-->
+    <string name="http_boss_companysearch">api/recruit.company/search</string>
+    <!--    boss实名认证（二）-->
+    <string name="http_boss_checkidinfo">api/recruit.boss_info/CheckIDinfo</string>
+    <!--    新建公司信息-->
+    <string name="http_boss_companyadd">api/recruit.company/add</string>
+    <!--    boss首页&#45;&#45;在招职位名称表-->
+    <string name="http_boss_positions">api/recruit.boss_home/positions</string>
+    <!--    发布新职位（三）-->
+    <string name="http_boss_addPosition">api/recruit.position/addPosition</string>
+    <!--    boss-我的-个人信息-->
+    <string name="http_boss_bossInfom">api/recruit.boss_info/detail</string>
+    <!--    boss-我的-首页-->
+    <string name="http_boss_bossme">api/recruit.boss/index</string>
+    <!--    编辑boss个人信息-->
+    <string name="http_boss_editbossinfom">api/recruit.boss_info/editBaseinfo</string>
+    <!--    boss-职位管理-职位列表-->
+    <string name="http_boss_bosslists">api/recruit.position/lists</string>
+    <!--    boss-我的-公司信息详情-->
+    <string name="http_boss_bossdetail">api/recruit.company/detail</string>
+    <!--    boss首页&#45;&#45;在招职位简历推荐（搜索）-->
+    <string name="http_boss_cv_recommend">api/recruit.boss_home/cv_recommend</string>
+    <!--    编辑公司信息-->
+    <string name="http_boss_changerinfom">api/recruit.company/edit</string>
+    <!--    待查看简历列表-->
+    <string name="http_boss_check">api/recruit.boss/to_check</string>
+    <!--    待面试简历列表-->
+    <string name="http_boss_interview">api/recruit.boss/to_interview</string>
+    <!--    已处理简历列表-->
+    <string name="http_boss_cv_logs">api/recruit.boss/cv_logs</string>
+    <!--    已处理面试邀请-->
+    <string name="http_boss_interview_logs">api/recruit.boss/interview_logs</string>
+    <!--    更换公司-->
+    <string name="http_boss_changeCompany">api/recruit.boss_info/changeCompany</string>
+    <!--    查看简历详情-->
+    <string name="http_boss_cv_detail">api/recruit.boss/cv_detail</string>
+    <!--    查看用户简历(首页)-->
+    <string name="http_boss_home_cv_detail">api/recruit.boss_home/cv_detail</string>
+    <!--    职位详情-->
+    <string name="http_boss_job_detail">api/recruit.position/detail</string>
+    <!--    boss-职位管理-职位停用-->
+    <string name="http_boss_job_stop">api/recruit.position/stop</string>
+    <!--    boss-职位管理-职位启用-->
+    <string name="http_boss_job_open">api/recruit.position/open</string>
+    <!--    面试详情-->
+    <string name="http_boss_interview_detail">api/recruit.boss/interview_detail</string>
+    <!--    标记为不合适-->
+    <string name="http_boss_not_match">api/recruit.boss/mark_not_match</string>
+    <!--    标记面试未到-->
+    <string name="http_boss_not_come">api/recruit.boss/mark_not_come</string>
+    <!--    标记面试结束-->
+    <string name="http_boss_end_interview">api/recruit.boss/mark_end_interview</string>
+    <!--    发起面试邀请-->
+    <string name="http_boss_send_interview">api/recruit.boss/Invite</string>
+    <!--    对我感兴趣的-->
+    <string name="http_boss_send_like_me">api/recruit.position_like/like_me</string>
+    <!--    编辑职位信息-->
+    <string name="http_boss_editPosition">api/recruit.position/editPosition</string>
+    <!--    boss 向求职者发起沟通对话-->
+    <string name="http_boss_start_talk">api/recruit.talk/boss_start_talk</string>
+    <!--    boss 消息板块列表页面初始化内容-->
+    <string name="http_boss_list_init">api/recruit.talk/boss_list_init</string>
+    <!--    boss端单个对话沟通页面初始化-->
+    <string name="http_boss_talk_init">api/recruit.talk/boss_talk_init</string>
+
+
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="cancel">取消</string>
+    <string name="setting">设置</string>
+
+    <string name="tab_home">首页</string>
+    <string name="tab_hot">发现</string>
+    <string name="tab_type">分类</string>
+    <string name="tab_msg">消息</string>
+    <string name="tab_me">我的</string>
+    <string name="tab_me1">个人中心</string>
+
+    <string name="login">登录</string>
+    <string name="wx_login">微信快捷登录</string>
+    <string name="register">注册</string>
+    <string name="login_phone_hint">请输入您的手机号</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_no_account_tip">还没有账号？</string>
+    <string name="login_register_tip">立即注册</string>
+
+    <string name="phone_num_wrong">请输入正确的手机号码</string>
+    <string name="agreement_first">请先同意协议</string>
+    <string name="verify_code_empty">请输入验证码</string>
+    <string name="pwd_empty">请输入密码</string>
+    <string name="invite_empty">邀请码不能为空</string>
+    <string name="service_error">网络异常，请稍侯再试</string>
+
+
+    <string name="forget_password">忘记密码?</string>
+    <string name="forget_password2">忘记密码</string>
+    <string name="input_verification_code_hint">请输入验证码</string>
+    <string name="get_verification_code">点击获取</string>
+    <string name="invitation_code_hint">请输入邀请码</string>
+    <string name="read_and_agree_hint">我已阅读并同意</string>
+    <string name="read_and_agree_hint2"><u>《用户注册协议》</u></string>
+    <string name="input_new_password_hint">请输入您的新密码</string>
+    <string name="input_new_password_hint2">再次输入您的新密码</string>
+    <string name="enter">确定</string>
+    <string name="net_error">无网络</string>
+    <string name="no_login">登录超时，请重新登陆</string>
+
+
+    <string name="share_back_m">分享消费返</string>
+    <string name="charge_back_m">佣金</string>
+    <string name="search_hint">请输入要搜索的内容</string>
+    <string name="text_near_shop">附近商家</string>
+    <string name="text_near_shop_2">精选优质商家</string>
+    <string name="text_shop_more">更多商家</string>
+    <string name="text_recommend_pos">推荐职位</string>
+    <string name="text_recommend_more">超多精选职位</string>
+    <string name="text_more_recommend">更多推荐</string>
+    <string name="choose_specs">已选</string>
+    <string name="p_choose_specs">请选择商品规格</string>
+    <string name="shop_evaluate">商品评价</string>
+    <string name="evaluate_more">查看全部</string>
+    <string name="shop_detaile">商品简介</string>
+    <string name="text_shop">店铺</string>
+    <string name="text_share">分享</string>
+    <string name="text_collect">收藏</string>
+    <string name="text_buy">立即购买</string>
+    <string name="find_tab_l">综合排序</string>
+    <string name="find_tab_c">销量排序</string>
+    <string name="find_tab_r">价格排序</string>
+    <string name="text_partner">合伙人</string>
+
+    <string name="text_my_money">我的余额</string>
+    <string name="text_my_gold">我的金币</string>
+    <string name="text_my_card">红包/卡券</string>
+    <string name="text_my_pause">我的钱包</string>
+    <string name="text_wait_pay">待付款</string>
+    <string name="text_wait_rec">待收货</string>
+    <string name="text_wait_send">待发货</string>
+    <string name="text_wait_back">退换货</string>
+    <string name="text_wait_order">线上订单</string>
+    <string name="text_be_shoper">申请成为商家</string>
+    <string name="text_commit_info">点击提交合作资料~</string>
+    <string name="text_commit_partner">升级为合伙人</string>
+    <string name="text_partner_power">享受各种交易提成~</string>
+    <string name="text_help">帮助中心</string>
+    <string name="text_setting">设置</string>
+    <string name="text_tools">常用工具</string>
+    <string name="agreement">注册协议</string>
+    <string name="text_update_login_pwd">修改登陆密码</string>
+    <string name="text_update_pay_pwd">设置支付密码</string>
+    <string name="text_update_phone_pwd">修改手机号码</string>
+    <string name="text_unset">未设置</string>
+    <string name="text_advice">投诉建议</string>
+    <string name="text_about">关于我们</string>
+    <string name="text_version">版本号</string>
+    <string name="text_normal_version">V1.0.0</string>
+    <string name="text_exit">退出登陆</string>
+
+    <string name="question_opinion">问题意见</string>
+    <string name="question_opinion_hint">建议添加相关问题截图等</string>
+    <string name="question_opinion_hint1">请详细描述你的问题，我们将及时跟进解决（必填）</string>
+    <string name="submit">提交</string>
+    <string name="text_up_img">上传凭证</string>
+
+    <string name="text_forget_pwd">忘记原密码？</string>
+    <string name="text_config_update">确定修改</string>
+    <string name="text_old_pwd">原密码</string>
+    <string name="hint_old_pwd">请输入原登陆密码</string>
+    <string name="text_new_pwd">新密码</string>
+    <string name="hint_new_pwd">请输入新登陆密码</string>
+    <string name="hint_new_pwd_">再次输入新登陆密码</string>
+    <string name="text_phone">手机号</string>
+    <string name="text_verify">验证码</string>
+    <string name="hint_pay_pwd">请输入6位数字的交易密码</string>
+    <string name="hint_pay_pwd_">再次输入交易密码</string>
+
+
+    <string name="text_user_info">个人资料</string>
+    <string name="text_update_header">修改头像</string>
+    <string name="text_update_nicker">修改昵称</string>
+    <string name="text_my_bank_card">我的银行卡</string>
+    <string name="text_my_wx_account">我的微信</string>
+    <string name="text_my_ali_account">我的支付宝</string>
+    <string name="text_my_invite_code">我的邀请码(不可修改)</string>
+
+    <string name="text_real_name">真实姓名</string>
+    <string name="text_card_id">身份证号</string>
+    <string name="text_card_num">银行卡号</string>
+    <string name="text_card_belong">所属银行</string>
+    <string name="text_card_phone">手机号码</string>
+    <string name="text_bind_now">立即绑定</string>
+
+    <string name="hint_real_name">请输入您的真实姓名</string>
+    <string name="hint_card_id">请输入您的身份证号</string>
+    <string name="hint_card_num">输入银行卡卡号</string>
+    <string name="hint_card_belong">点击获取发卡行名称</string>
+    <string name="hint_card_phone">输入银行预留手机号码</string>
+    <string name="text_card_support_bank">当前支持绑定的银行：\n\n中国农业银行，中国工商银行，中国建设银行，中国银行，交 通银行，平安银行，中国光大银行，中信银行，兴业银行，上 海浦东发展银行，中国民生银行，华夏银行，北京银行。</string>
+    <string name="text_team_money">佣金总收益(元)</string>
+    <string name="text_cash">提现</string>
+
+    <string name="text_my_team">我的团队</string>
+    <string name="under_line_order">线下订单</string>
+    <string name="on_line_order">线上订单</string>
+    <string name="text_choose_role">选择当前你的身份</string>
+    <string name="text_choose_role_tip">之后可以在“我的-设置”中切换</string>
+    <string name="text_req_job">我要求职</string>
+    <string name="text_resp_job">我要招聘</string>
+    <string name="text_up_header">上传头像\n简历查看率增加20%</string>
+    <string name="text_job_name">姓名</string>
+    <string name="hint_req_job_name">请填写真实姓名</string>
+    <string name="hint_req_job_gender">请选择性别</string>
+    <string name="hint_req_job_bron">请选择出生年月</string>
+    <string name="text_job_bron">出生年月</string>
+    <string name="text_job_gender">性别</string>
+    <string name="text_job_work">参加工作时间</string>
+    <string name="hint_req_job_work">请选择参加工作时间</string>
+    <string name="text_job_city">现居住城市</string>
+    <string name="hint_req_job_city">请选择现在居住的城市</string>
+    <string name="hint_req_job_phone">请绑定手机号码</string>
+    <string name="text_job_phone">手机号码</string>
+    <string name="hint_req_job_email">请输入电子邮箱</string>
+    <string name="text_job_email">电子邮箱</string>
+    <string name="text_next_step">下一步</string>
+    <string name="text_edu_tip">详细的教育经历能为简历加分哦</string>
+    <string name="text_edu_experience">教育经历</string>
+    <string name="text_job_school">学校名称</string>
+    <string name="hint_req_job_school">请填写学校名称</string>
+    <string name="hint_req_job_experience">请选择学历</string>
+    <string name="text_job_experience">学历</string>
+    <string name="text_job_special">所学专业</string>
+    <string name="hint_req_job_special">请填写专业名称</string>
+    <string name="text_job_times">时间段</string>
+    <string name="hint_req_job_times">请选择时间段</string>
+    <string name="text_work_experience">工作/实习经历</string>
+    <string name="text_work_tip">大部分公司关注您的工作/实习经历</string>
+    <string name="text_job_company">公司名称</string>
+    <string name="hint_req_job_company">请填写公司名称</string>
+    <string name="text_job_time">在职时间</string>
+    <string name="hint_req_job_time">请选择在职时间</string>
+    <string name="text_job_work_type">职位类型</string>
+    <string name="hint_req_job_work_time">请选择职位类型</string>
+    <string name="text_job_content">工作内容</string>
+    <string name="hint_req_job_work_content">请填写您在公司的工作内容</string>
+    <string name="text_job_intent">求职意向</string>
+    <string name="text_job_intent_tip">根据求职意向为您推荐相关职位</string>
+    <string name="text_job_type">工作性质</string>
+    <string name="hint_req_job_type">请选择工作性质</string>
+    <string name="text_job_status">求职状态</string>
+    <string name="hint_req_job_status">请选择求职状态</string>
+    <string name="my_shop">我的店铺</string>
+    <string name="text_shop_set">店铺设置</string>
+    <string name="text_shop_info">店铺资料</string>
+    <string name="text_total">累计收益</string>
+    <string name="text_go_cash">去提现</string>
+    <string name="text_evalute_manager">评价管理</string>
+    <string name="text_money_detail">收入明细</string>
+    <string name="text_shop_name">商品名称：</string>
+    <string name="hint_shop_name">请输入商品名称</string>
+    <string name="text_shop_price">价格(￥）：</string>
+    <string name="hint_shop_price">请输入商品价格</string>
+    <string name="text_shop_money">商品佣金：</string>
+    <string name="hint_shop_money">请设置该商品的佣金金额（不设置则为0）</string>
+    <string name="hint_share_money">请设置该商品的分享奖励（不设置则为0）</string>
+    <string name="hint_shop_image">请上传商品图片(可上传多张)</string>
+    <string name="hint_shop_spec">请设置商品规格</string>
+    <string name="text_shop_spec">商品规格：</string>
+    <string name="text_shop_spec_">商品规格属性</string>
+    <string name="text_shop_count">商品库存：</string>
+    <string name="hint_shop_count">请输入库存数</string>
+    <string name="text_shop_desc">商品描述：</string>
+    <string name="hint_shop_desc">请输入商品文字描述</string>
+    <string name="text_shop_take">到店自取：</string>
+    <string name="hint_shop_take">（注:请选择该商品是否支持到店自取）</string>
+    <string name="text_config_rel">确认发布</string>
+    <string name="text_update_spec">修改</string>
+    <string name="text_shop_size">尺寸</string>
+    <string name="text_coupon_size">券的面额：</string>
+    <string name="text_coupon_use">使用条件：</string>
+    <string name="hint_coupon_use">￥用券最低订单金额</string>
+    <string name="hint_coupon_size">￥优惠券金额</string>
+    <string name="text_coupon_lib">券的库存：</string>
+    <string name="hint_coupon_lib">可被领取的总券数</string>
+    <string name="text_coupon_limit">每人限领：</string>
+    <string name="hint_coupon_limit">每人可领取券的张数</string>
+    <string name="text_coupon_start">开始时间：</string>
+    <string name="hint_coupon_start">使用券的开始时间</string>
+    <string name="text_coupon_end">结束时间：</string>
+    <string name="hint_coupon_end">使用券的结束时间</string>
+    <string name="text_config_add">确认添加</string>
+    <string name="text_re_config_add">重新添加</string>
+    <string name="text_release_coupon_">发布优惠券</string>
+    <string name="text_release_coupon">发布优惠</string>
+    <string name="text_release_bag">发布红包</string>
+    <string name="hint_bag_type">红包</string>
+    <string name="hint_bag_detail">点击查看已经发布的红包信息</string>
+    <string name="hint_coupon_type">优惠券</string>
+    <string name="hint_coupon_detail">点击查看已经发布的优惠券信息</string>
+    <string name="text_rel_coupon">发布优惠</string>
+    <string name="text_choose_release">您想要发布哪种优惠？</string>
+    <string name="text_choose_coupon_tip">根据选择为您提供更方便的服务</string>
+    <string name="text_red_bag">红包</string>
+    <string name="text_red_bag_tip">您可以设置具体发布红包的金额大小，数量 是否随机等。</string>
+    <string name="text_red_coupon">优惠券</string>
+    <string name="text_coupon_tip">您可以设置具体发布优惠券的金额大小，数 量，有效期等。</string>
+    <string name="text_choose_rec_bag_gender">推送红包性别：</string>
+    <string name="text_near_people">是否推送给附近的人：</string>
+    <string name="text_single_bag_count">单个红包金额：</string>
+    <string name="text_bag_total_count">红包总数量：</string>
+    <string name="hint_bag_total_count">请输入要发布的店铺红包总数量</string>
+    <string name="hint_single_bag_count">请输入单个红包金额</string>
+    <string name="text_women">女</string>
+    <string name="text_man">男</string>
+    <string name="text_choose_pay_type">选择支付方式</string>
+    <string name="text_config_pay">确认支付</string>
+    <string name="text_wx_pay">微信支付</string>
+    <string name="text_ali_pay">支付宝支付</string>
+    <string name="text_account_pay">账户余额</string>
+    <string name="text_account_cur_money">当前余额：￥0.00</string>
+    <string name="text_bag_manage">管理红包</string>
+    <string name="text_coupon_manage">管理优惠券</string>
+    <string name="text_coupon_cancel">取消的优惠券</string>
+    <string name="text_cancel_coupon">查看已取消优惠券</string>
+    <string name="text_shop_manage">商品管理</string>
+    <string name="text_order_manage">订单管理</string>
+    <string name="text_release_shop">发布商品</string>
+    <string name="text_edit">编辑</string>
+    <string name="text_up">下架</string>
+    <string name="text_delete">删除</string>
+    <string name="permission_request_denied">请允许相应的权限</string>
+    <string name="error_gif">长宽不小于 %1$dpx，且大小不超过 %2$sM。</string>
+    <string name="error_original">大小不超过 %1$sM。</string>
+    <string name="button_allow">允许</string>
+    <string name="button_deny">拒绝</string>
+    <string name="permission_camera_rationale">需要权限</string>
+    <string name="text_choose_spec">为商品添加规格属性，顾客选购更方便~</string>
+    <string name="text_set_spec">设置规格</string>
+    <string name="text_set_spec_tip">如份量、尺寸等，可为对应规格设置价格、库存</string>
+    <string name="hint_spec_name">请输入规格名称</string>
+    <string name="text_spec_choose">规格选项</string>
+    <string name="text_spec_price">价格</string>
+    <string name="text_spec_count">库存</string>
+    <string name="text_spec_add">添加选项</string>
+    <string name="text_delete_spec">删除该规格</string>
+    <string name="text_spec_set_done">设置完成</string>
+    <string name="text_evaluate_reply">回复</string>
+    <string name="text_shop_reply">商家回复</string>
+    <string name="text_done">完成</string>
+    <string name="hint_shop_notice">请输入店铺公告…</string>
+    <string name="text_shop_order">商品订单</string>
+    <string name="text_look_logistics">物流信息</string>
+    <string name="text_config_send">确认发送</string>
+    <string name="hint_input_order_sn">请输入物流单号</string>
+    <string name="text_order_sn">物流单号：</string>
+    <string name="text_choose_logistics_company">点击选择您发货的物流公司</string>
+    <string name="text_logistics_company">物流公司：</string>
+    <string name="text_send_info">填写发货信息</string>
+    <string name="text_shop_base_info">基本信息</string>
+    <string name="text_shop_header_img">店铺门头照</string>
+    <string name="text_shop_nicker">店铺名称</string>
+    <string name="text_shop_desc_">店铺介绍</string>
+    <string name="text_shop_main">主营类目</string>
+    <string name="text_shop_phone">店铺电话</string>
+    <string name="text_shop_address">店铺地址</string>
+    <string name="text_shop_level">店铺等级</string>
+    <string name="hint_set_shop_name">请设置店铺名称</string>
+    <string name="hint_unset">未设置</string>
+    <string name="hint_main_category">请选择主营类目</string>
+    <string name="hint_set_address">请设置店铺地址</string>
+    <string name="hint_set_phone">请设置店铺电话</string>
+    <string name="text_shop_add_info">补充信息</string>
+    <string name="text_shop_work">营业时间</string>
+    <string name="text_shop_qualify">营业资质</string>
+    <string name="text_shop_sync">同步招聘消息到店铺</string>
+    <string name="text_my_shop">我的店铺</string>
+    <string name="text_your_name">您的姓名：</string>
+    <string name="text_your_phone">手机号码：</string>
+    <string name="text_your_id">身份证号：</string>
+    <string name="text_shoper_name">商家名称：</string>
+    <string name="text_shoper_address">商家地址：</string>
+    <string name="text_shoper_main_category">主营类目：</string>
+    <string name="hint_your_name">请输入您的姓名</string>
+    <string name="hint_your_phone">请输入手机号码</string>
+    <string name="hint_your_id">请输入您的身份证号码</string>
+    <string name="hint_shoper_name">请输入商家名称</string>
+    <string name="hint_shoper_address">请输入商家地址</string>
+    <string name="hint_shoper_category">请选择主营项目(如美食类，服装类等）</string>
+    <string name="text_shop_photo">门头照</string>
+    <string name="text_shop_qualify_">营业执照：</string>
+    <string name="hint_set_shop_qualify">请上传店铺资质</string>
+    <string name="text_your_info">简单介绍：</string>
+    <string name="hint_your_desc">简单介绍您的商户信息</string>
+    <string name="text_read_agree">我已阅读并同意</string>
+    <string name="text_agreement_">《入驻申请协议》</string>
+    <string name="text_apply_agreement">入驻申请协议</string>
+    <string name="text_apply_now">立即申请入驻</string>
+    <string name="text_shoper_area">商家区域：</string>
+    <string name="hint_shoper_area">请选择省市区</string>
+    <string name="text_init_num">0</string>
+    <string name="text_cash_record">提现记录</string>
+    <string name="text_cash_money">提现金额</string>
+    <string name="text_config_cash">确认提现</string>
+    <string name="text_cash_rule">提现规则：\n\n 1. 提现收取1%手续费。\n\n 2. 到账时间：工作日两小时内。</string>
+    <string name="simple_view_behavior">com.tsyc.tianshengyoucai.utils.SimpleViewBehavior</string>
+    <string name="text_store_info">商家信息</string>
+    <string name="text_store_hot_pos">本店热招职位</string>
+    <string name="text_store_hot_pos_tip">招聘完成</string>
+    <string name="text_store_hot_pos_tip2">招聘中</string>
+    <string name="text_store_cate">商家分类</string>
+    <string name="text_work_time">营业时间</string>
+    <string name="text_store_name">商家名称</string>
+    <string name="text_store_profit">营业资质</string>
+    <string name="text_report_shop">举报商家</string>
+    <string name="text_collect_store">收藏商家</string>
+    <string name="text_share_store">分享商家</string>
+    <string name="text_support_line">支持线上线下</string>
+    <string name="please_new_phone">请输入新的手机号</string>
+    <string name="please_new_code">请输入收到的验证码</string>
+    <string name="success">修改成功</string>
+    <string name="save_success">保存成功</string>
+    <string name="text_red_active">红包活动</string>
+    <string name="text_report_tip">如有紧急问题，您可以立即联系X街客服</string>
+    <string name="text_shop_detail_address">详细地址</string>
+    <string name="hint_set_detail_address">请设置店铺详细地址</string>
+    <string name="text_wait_pay_count">待结算金额（元）</string>
+    <string name="text_total_w">累计流水（元）</string>
+    <string name="text_month_w">当月流水（元）</string>
+    <string name="text_day_w">当日流水（元）</string>
+    <string name="text_casher">收银台</string>
+    <string name="text_detail_w">流水详情</string>
+    <string name="text_receive_w">点击收款</string>
+    <string name="text_cash_w">申请提现</string>
+    <string name="text_scan">扫码核销</string>
+    <string name="text_shop_underline_order">店铺线下订单</string>
+    <string name="text_cash_manage">收银台管理端</string>
+
+
+    <array name="category_name">
+        <item name="shop_piker">商家招聘</item>
+        <item name="shop_service">商家服务</item>
+        <item name="shop_info">商业资讯</item>
+        <item name="map_red">地图红包</item>
+    </array>
+
+    <array name="shop_tool_name">
+        <item name="shop_piker">发布商品</item>
+        <item name="shop_service">发布优惠</item>
+        <item name="shop_info">商品管理</item>
+        <item name="map_red">订单管理</item>
+    </array>
+
+
+    <array name="tools_name">
+        <item name="under_line_order">线下订单</item>
+        <item name="my_shop">我的店铺</item>
+        <item name="my_rec_money">我的收银台</item>
+        <item name="my_team">我的团队</item>
+        <item name="my_info">个人资料</item>
+        <item name="my_collect">我的收藏</item>
+        <item name="my_rec_address">收货地址</item>
+        <item name="my_invite">邀请好友</item>
+    </array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_pay_for_shop">向商家付款</string>
+    <string name="text_scan_pay">扫一扫向我付款</string>
+    <string name="text_receive_qrcode">收款码</string>
+    <string name="text_receive_record">收款记录</string>
+    <string name="text_save_receive_qrcode">保存收款码</string>
+    <string name="text_clear_count">清除金额</string>
+    <string name="text_set_count">设置金额</string>
+    <string name="text_bill_detail">账单明细</string>
+    <string name="text_inner_money">内部价：</string>
+    <string name="hint_inner_money">请输入内部价</string>
+    <string name="text_shop_image">商品图片：</string>
+    <string name="text_my_order">我的订单</string>
+    <string name="text_add_new_address">新增收货地址</string>
+    <string name="text_self_agreement">用户到店自取协议</string>
+    <string name="text_shop_detail_image">商品详情：</string>
+    <string name="hint_shop_detail_image">请上传商品详情(可上传多张)</string>
+    <string name="text_shop_cate">商品分类：</string>
+    <string name="hint_shop_cate">请选择商品分类</string>
+    <string name="plz_show_code">请出示有效码</string>
+
+    <string name="text_input_num_latter">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string name="company_rule">1.请输入您所属公司营业执照上的公司名称\n 2.请注意区分总公司和分公司\n 3.公司名称将用于后续的企业认证使用，请确保准确性</string>
+    <string name="create_company_rule">1.请上传最新的营业执照\n 2.保证照片清晰可辨认\n 3.请确保您上传的营业执照真实有效</string>
+    <string name="company_verify">您的企业认证已提交，我们将尽快审核 \n认证结果会在APP内通知您。</string>
+
+</resources>

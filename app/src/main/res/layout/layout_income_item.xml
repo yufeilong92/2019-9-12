@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_83"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingTop="@dimen/dp_20"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/dp_10"
+    android:paddingEnd="@dimen/dp_20"
+    android:paddingBottom="@dimen/dp_10"
+    tools:ignore="MissingConstraints">
+
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_444A53"
+        android:textSize="@dimen/ts_13" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_444A53"
+        android:textSize="@dimen/ts_17"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tv_date"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_date" />
+
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:lines="1"
+        android:textColor="@color/edit_hint_color"
+        android:textSize="@dimen/ts_13"
+        app:layout_constraintTop_toBottomOf="@id/tv_date"
+        tools:text="121221212212" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".ui.recruit.boss.BossInterviewActivity">
+
+    <include layout="@layout/gm_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_20"
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_interview_name"
+                        style="@style/text_main_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_48"
+                        android:text="与 李志平 的面试"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_interview_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="面试待处理" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/iv_interview_hear"
+                    android:layout_width="@dimen/dp_48"
+                    android:layout_height="@dimen/dp_48"
+                    android:src="@mipmap/ic_default_picture" />
+
+            </LinearLayout>
+
+            <View style="@style/line_height_one" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/tv_interview_jianli"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/jft_but_onlineresume"
+                    android:drawablePadding="@dimen/dp_4"
+                    android:gravity="center"
+                    android:text="在线简历" />
+
+                <TextView
+                    android:id="@+id/tv_interview_chat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/jft_but_chat"
+                    android:drawablePadding="@dimen/dp_4"
+                    android:gravity="center"
+                    android:text="聊天" />
+
+                <TextView
+                    android:id="@+id/tv_interview_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/jft_but_telephone"
+                    android:drawablePadding="@dimen/dp_4"
+                    android:gravity="center"
+                    android:text="电话" />
+
+            </LinearLayout>
+
+            <View style="@style/line_height_one" />
+
+            <TextView
+                android:id="@+id/tv_interview_time"
+                style="@style/text_fu_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:drawableLeft="@mipmap/jft_icon_interviewtime"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/dp_40"
+                android:text="面试时间" />
+
+            <TextView
+                android:id="@+id/tv_interview_address"
+                style="@style/text_fu_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:drawableLeft="@mipmap/jft_but_interviewaddress"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/dp_40"
+                android:text="面试地点: 河南省郑州市金水区未来路与英协路
+交叉口豫茶大厦1201" />
+
+            <TextView
+                android:id="@+id/tv_interview_job"
+                style="@style/text_fu_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:drawableLeft="@mipmap/jft_but_interviewposition"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/dp_40"
+                android:text="面试职位: 办公室文员 3k-6k" />
+
+            <RelativeLayout
+                android:id="@+id/rl_boss_interview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View style="@style/line_height_one"
+                    android:layout_above="@id/ll_buttom"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_buttom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_16">
+
+                    <Button
+                        android:id="@+id/btn_boss_interview_no"
+                        style="@style/text_bule_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/bg_qian_bule"
+                        android:text="人没来" />
+
+                    <Button
+                        android:id="@+id/btn_boss_interview_over"
+                        style="@style/text_15_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/gm_4_bule_bg_circle"
+                        android:text="面试结束" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

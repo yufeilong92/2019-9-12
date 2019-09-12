@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="@dimen/dp_180"
+        android:layout_height="@dimen/dp_43"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/dp_78"
+        android:background="@drawable/normal_btn_bg"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:text="去看看"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <com.pixelcan.inkpageindicator.InkPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/dp_78"
+        android:fitsSystemWindows="true"
+        android:padding="@dimen/dp_10"
+        app:ipi_animationDuration="320"
+        app:ipi_currentPageIndicatorColor="#bdbdbd"
+        app:ipi_dotDiameter="@dimen/dp_8"
+        app:ipi_dotGap="@dimen/dp_8"
+        app:ipi_pageIndicatorColor="#424242" />
+
+</FrameLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.recruit.boss.sign.BossWorkAreaActivity">
+
+    <include layout="@layout/gm_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="工作地点"
+        android:textColor="@color/color_444A53"
+        android:textSize="@dimen/ts_22"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/text_fu_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="详细的工作地点让求职者准确的找到公司" />
+
+
+    <TextView
+        style="@style/text_main_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="公司地址" />
+
+    <TextView
+        android:id="@+id/tv_boss_area_adress"
+        style="@style/text_main_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_16"
+        android:drawableRight="@mipmap/jft_but_arrow"
+        android:hint="请选择公司地址" />
+
+    <View
+        style="@style/line_height_one"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_16" />
+
+    <TextView
+        style="@style/text_main_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="门牌号" />
+
+    <EditText
+        style="@style/text_main_15"
+         android:id="@+id/et_boss_area_infom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:maxLength="200"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_16"
+        android:background="@color/transparent"
+        android:drawableRight="@mipmap/jft_but_arrow"
+        android:hint="楼号/门牌号等：例:12楼402"
+        android:minHeight="@dimen/dp_40" />
+
+    <View
+        style="@style/line_height_one"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_16" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_boss_area_save"
+            style="@style/text_fu_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:text="保存" />
+
+    </RelativeLayout>
+</LinearLayout>

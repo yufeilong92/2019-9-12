@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.recruit.jobmine.JobPrivacyActivity">
+
+    <include layout="@layout/gm_title_right" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_16"
+            android:background="@drawable/gm_4_white_bg_radio"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_main_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="绑定手机号" />
+
+                <TextView
+                    android:id="@+id/tv_privacy_phone"
+                    style="@style/text_main_13"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_48"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:drawableRight="@mipmap/jft_but_arrow"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:gravity="right|center"
+                    android:maxLength="11"
+                    android:text="18317527412" />
+            </LinearLayout>
+
+            <View style="@style/line_height_one" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_main_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="绑定邮箱" />
+
+                <EditText
+                    android:id="@+id/et_privacy_emali"
+                    style="@style/text_main_13"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_48"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:drawableRight="@mipmap/jft_but_arrow"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:gravity="right|center"
+                    android:maxLength="30"
+                    android:text="18317527412@qq.com" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_changer_submit"
+            style="@style/btn_15_bule"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:text="保存" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@drawable/gm_4_white_bg_radio"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_main_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="切换身份" />
+
+                <TextView
+                    android:id="@+id/tv_privacy_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/jft_but_arrow"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:gravity="right"
+                    android:text="我要求职" />
+            </LinearLayout>
+
+            <View style="@style/line_height_one" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_main_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="隐藏简历" />
+
+                <CheckBox
+                    android:id="@+id/cb_privacy_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_35"
+                    android:button="@drawable/to_shop_take_selector"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:gravity="right" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

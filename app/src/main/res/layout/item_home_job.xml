@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/margin_16"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
+        style="@style/margin_16"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/dp_35">
+        <TextView android:layout_width="wrap_content"
+            android:text="职位推荐"
+            android:textStyle="bold"
+            android:textColor="@color/color_444A53"
+            android:textSize="@dimen/ts_18"
+            android:gravity="bottom"
+            android:layout_height="match_parent"/>
+        <TextView android:layout_width="wrap_content"
+
+            style="@style/text_fu_12"
+            android:text="超多精选职位"
+            android:gravity="bottom"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_height="match_parent"/>
+        <TextView android:layout_width="match_parent"
+            android:text="更多推荐"
+            style="@style/text_main_12"
+            android:layout_weight="1"
+            android:id="@+id/tv_job_more"
+            android:gravity="right"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:drawablePadding="@dimen/dp_6"
+            android:drawableRight="@mipmap/jft_but_arrow"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        style="@style/margin_16"
+        android:id="@+id/rlv_item_home_job_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:ignore="MissingConstraints">
+
+    <include
+        android:id="@+id/root_title"
+        layout="@layout/toolbar_normal_title" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ctl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_206"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/shape_white_rectangle"
+        android:paddingStart="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_26"
+        android:paddingEnd="@dimen/dp_15"
+        android:paddingBottom="@dimen/dp_26"
+        app:layout_constraintTop_toBottomOf="@id/root_title">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_start_time"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_72"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_rectangle"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/dp_17">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开始时间"
+                        android:textColor="@color/edit_hint_color"
+                        android:textSize="@dimen/ts_12" />
+
+                    <TextView
+                        android:id="@+id/tv_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="点击选择开始时间"
+                        android:textColor="@color/color_444A53"
+                        android:textColorHint="@color/color_444A53"
+                        android:textSize="@dimen/ts_13" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_end_time"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_72"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_rectangle"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/dp_17">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="结束时间"
+                        android:textColor="@color/edit_hint_color"
+                        android:textSize="@dimen/ts_12" />
+
+                    <TextView
+                        android:id="@+id/tv_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:hint="点击选择结束时间"
+                        android:textColor="@color/color_444A53"
+                        android:textColorHint="@color/color_444A53"
+                        android:textSize="@dimen/ts_13" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/jft_icon_billdetailsarrow" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_47"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:background="@drawable/normal_red_btn_bg"
+            android:text="点击查询"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_17"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/tv_detail_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_33"
+        android:gravity="center_vertical"
+        android:text="流水明细"
+        android:paddingStart="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@id/ctl_top" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/dp_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_detail_image"
+        app:srlEnableAutoLoadMore="false"
+        app:srlEnableLoadMore="true">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.classic.common.MultipleStatusView
+            android:id="@+id/multiple_status_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:emptyView="@layout/custom_empty_view"
+            app:errorView="@layout/custom_error_view"
+            app:loadingView="@layout/custom_loading_view"
+            app:noNetworkView="@layout/custom_no_network_view">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_color"
+                android:overScrollMode="never"
+                tools:listitem="@android:layout/simple_list_item_2" />
+
+
+        </com.classic.common.MultipleStatusView>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="Scale" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

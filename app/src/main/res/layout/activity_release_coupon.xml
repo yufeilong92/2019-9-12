@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:ignore="MissingConstraints">
+
+    <include
+        android:id="@+id/root_title"
+        layout="@layout/toolbar_normal_title" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ctl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_192"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:background="@drawable/shape_white_rectangle"
+        android:paddingTop="@dimen/dp_30"
+        app:layout_constraintTop_toBottomOf="@id/root_title">
+
+
+        <ImageView
+            android:id="@+id/iv_bag"
+            android:layout_width="@dimen/dp_62"
+            android:layout_height="@dimen/dp_62"
+            android:background="@mipmap/jft_but_releaseredenvelopes"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_bag_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_18"
+            android:hint="@string/hint_bag_type"
+            android:textColor="@color/color_444A53"
+            android:textColorHint="@color/color_444A53"
+            android:textSize="@dimen/ts_17"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_bag" />
+
+        <TextView
+            android:id="@+id/tv_bag_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:text="@string/hint_bag_detail"
+            android:textColor="@color/color_7B8391"
+            android:textSize="@dimen/ts_14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_bag_type" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_192"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/ctl_youhui"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:background="@drawable/shape_white_rectangle"
+        android:paddingTop="@dimen/dp_30"
+        app:layout_constraintTop_toBottomOf="@id/ctl_top">
+
+
+        <ImageView
+            android:id="@+id/iv_coupon"
+            android:layout_width="@dimen/dp_62"
+            android:layout_height="@dimen/dp_62"
+            android:background="@mipmap/jft_but_issuecoupons"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_coupon_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_18"
+            android:hint="@string/hint_coupon_type"
+            android:textColor="@color/color_444A53"
+            android:textColorHint="@color/color_444A53"
+            android:textSize="@dimen/ts_17"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_coupon" />
+
+        <TextView
+            android:id="@+id/tv_coupon_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:text="@string/hint_coupon_detail"
+            android:textColor="@color/color_7B8391"
+            android:textSize="@dimen/ts_14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_coupon_type" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ctl_release_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_47"
+        android:layout_margin="@dimen/dp_15"
+        android:background="@drawable/normal_red_btn_bg_"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/jft_but_publishdiscounts"
+            android:drawablePadding="@dimen/dp_10"
+            android:text="@string/text_rel_coupon"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_17"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

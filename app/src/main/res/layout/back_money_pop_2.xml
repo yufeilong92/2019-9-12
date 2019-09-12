@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_325"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_pop_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:text=""
+        android:gravity="center"
+        android:textSize="@dimen/ts_15"
+        android:textColor="@color/color_444A53"
+        tools:ignore="MissingConstraints" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_reason"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pop_title" />
+
+</android.support.constraint.ConstraintLayout>

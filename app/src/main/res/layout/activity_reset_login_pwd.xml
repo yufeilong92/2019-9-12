@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:ignore="MissingConstraints,RtlSymmetry">
+
+    <include
+        android:id="@+id/root_title"
+        layout="@layout/toolbar_normal_title" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ctl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_169"
+        android:layout_marginTop="@dimen/dp_13"
+        android:background="@color/white"
+        android:paddingStart="@dimen/dp_11"
+        android:paddingEnd="@dimen/dp_11"
+        app:layout_constraintTop_toBottomOf="@id/root_title">
+
+        <TextView
+            android:id="@+id/tv_old"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_57"
+            android:gravity="center"
+            android:paddingStart="@dimen/dp_5"
+            android:text="@string/text_old_pwd"
+            android:textColor="@color/color_444A53"
+            android:textSize="@dimen/ts_16" />
+
+        <EditText
+            android:id="@+id/et_old_pwd"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_57"
+            android:layout_marginStart="@dimen/dp_17"
+            android:background="@null"
+            android:hint="@string/hint_old_pwd"
+            android:textColor="@color/edit_hint_color"
+            android:textSize="@dimen/ts_15"
+            app:layout_constraintLeft_toRightOf="@id/tv_old"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/color_E9EFF7"
+            app:layout_constraintTop_toBottomOf="@id/tv_old" />
+
+        <TextView
+            android:id="@+id/tv_new"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_57"
+            android:gravity="center"
+            android:paddingStart="@dimen/dp_5"
+
+            android:text="@string/text_new_pwd"
+            android:textColor="@color/color_444A53"
+            android:textSize="@dimen/ts_16"
+            app:layout_constraintTop_toBottomOf="@id/tv_old" />
+
+        <EditText
+            android:id="@+id/et_new_pwd"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_57"
+            android:layout_marginStart="@dimen/dp_17"
+            android:background="@null"
+            android:hint="@string/hint_new_pwd"
+            android:textColor="@color/edit_hint_color"
+            android:textSize="@dimen/ts_15"
+            app:layout_constraintBottom_toBottomOf="@id/tv_new"
+            app:layout_constraintTop_toTopOf="@id/tv_new"
+            app:layout_constraintLeft_toRightOf="@id/tv_new"
+            app:layout_constraintRight_toRightOf="parent" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/color_E9EFF7"
+            app:layout_constraintTop_toBottomOf="@id/tv_new" />
+
+        <TextView
+
+            android:id="@+id/tv_new_again"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_57"
+            android:gravity="center"
+
+            android:paddingStart="@dimen/dp_5"
+            android:text="@string/text_new_pwd"
+            android:textColor="@color/color_444A53"
+            android:textSize="@dimen/ts_16"
+            app:layout_constraintTop_toBottomOf="@id/tv_new" />
+
+        <EditText
+            android:id="@+id/et_new_pwd_"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_57"
+            android:layout_marginStart="@dimen/dp_17"
+            android:background="@null"
+            android:hint="@string/hint_new_pwd"
+            android:textColor="@color/edit_hint_color"
+            android:textSize="@dimen/ts_15"
+            app:layout_constraintBottom_toBottomOf="@id/tv_new_again"
+            app:layout_constraintTop_toTopOf="@id/tv_new_again"
+            app:layout_constraintLeft_toRightOf="@id/tv_new_again"
+            app:layout_constraintRight_toRightOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/tv_forget_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:gravity="center"
+        android:text="@string/text_forget_pwd"
+        android:textColor="@color/color_ED772F"
+        android:textSize="@dimen/ts_14"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ctl_top" />
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_67"
+        android:layout_marginEnd="@dimen/dp_24"
+        android:background="@drawable/normal_red_btn_bg"
+        android:text="@string/text_config_update"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ts_17"
+        app:layout_constraintTop_toBottomOf="@id/ctl_top" />
+
+</android.support.constraint.ConstraintLayout>

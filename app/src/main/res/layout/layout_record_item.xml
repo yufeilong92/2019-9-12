@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginStart="@dimen/dp_10"
+    android:layout_marginEnd="@dimen/dp_10"
+    android:background="@drawable/shape_white_rectangle"
+    android:paddingBottom="@dimen/dp_10"
+    tools:ignore="MissingConstraints">
+
+
+    <TextView
+        android:id="@+id/tv_nicker"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:gravity="center"
+        android:lines="1"
+        android:paddingStart="@dimen/dp_10"
+        android:text="@string/text_cash_money"
+        android:textColor="@color/color_444A53"
+        android:textSize="@dimen/ts_14"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_cash_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:textSize="@dimen/ts_14"
+        android:textColor="@color/tab_color"
+        app:layout_constraintBottom_toBottomOf="@id/tv_nicker"
+        app:layout_constraintLeft_toRightOf="@id/tv_nicker"
+        app:layout_constraintTop_toTopOf="@id/tv_nicker" />
+
+
+    <TextView
+        android:id="@+id/tv_cash_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:paddingEnd="@dimen/dp_10"
+        android:textColor="@color/color_5769E7"
+        android:textSize="@dimen/ts_14"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tv_nicker"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_nicker"
+        tools:text="下级昵称" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"
+        app:layout_constraintTop_toBottomOf="@id/tv_nicker" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingStart="@dimen/dp_10"
+        android:textColor="@color/color_7B8391"
+        android:textSize="@dimen/ts_13"
+        app:layout_constraintTop_toBottomOf="@id/tv_nicker"
+        tools:text="下级昵称:45454545" />
+
+    <TextView
+        android:id="@+id/tv_register_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:paddingStart="@dimen/dp_10"
+        android:textColor="@color/color_7B8391"
+        android:textSize="@dimen/ts_13"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone"
+        tools:text="下级昵称:45454545" />
+
+    <TextView
+        android:id="@+id/tv_level"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:gravity="start"
+        android:paddingStart="@dimen/dp_10"
+        android:textColor="@color/color_7B8391"
+        android:textSize="@dimen/ts_13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/iv_image"
+        app:layout_constraintTop_toBottomOf="@id/tv_register_time"
+        tools:text="下级昵称:45454545" />
+
+    <TextView
+        android:id="@+id/tv_pay_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:gravity="start"
+        android:paddingStart="@dimen/dp_10"
+        android:textColor="@color/color_7B8391"
+        android:textSize="@dimen/ts_13"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_level"
+        tools:text="下级昵称:45454545" />
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="@dimen/dp_13"
+        android:layout_height="@dimen/dp_13"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/tv_level"
+        app:layout_constraintRight_toLeftOf="@id/tv_team_num"
+        app:layout_constraintTop_toTopOf="@id/tv_level" />
+
+    <TextView
+        android:id="@+id/tv_team_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:textColor="@color/color_444A53"
+        android:textSize="@dimen/ts_13"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/tv_level"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_level" />
+
+</android.support.constraint.ConstraintLayout>

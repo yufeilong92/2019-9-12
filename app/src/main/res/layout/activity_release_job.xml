@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
+
+
+    <include layout="@layout/gm_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingEnd="@dimen/dp_16">
+
+            <TextView
+                android:id="@+id/tv_choose_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_20"
+                android:text="想要找什么样的人"
+                android:textColor="@color/color_444A53"
+                android:textSize="@dimen/ts_22"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_17"
+                android:text="根据您的要求推荐优质候选人"
+                android:textColor="@color/color_7B8391"
+                android:textSize="@dimen/ts_13"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_choose_role" />
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20">
+
+                <TextView
+                    android:id="@+id/tv_position_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_18"
+                    android:text="我要招聘"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/sp_14" />
+
+
+                <TextView
+                    android:id="@+id/tv_boss_position"
+                    style="@style/text_main_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/transparent"
+                    android:drawableEnd="@mipmap/jft_but_arrow"
+                    android:hint="请填写职位名称"
+                    android:maxLength="30"
+                    app:layout_constraintTop_toBottomOf="@id/tv_position_tip" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/line_color"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_boss_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_boss_work_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_18"
+                    android:text="工作性质"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/sp_14" />
+
+
+                <TextView
+                    android:id="@+id/tv_boss_work"
+                    style="@style/text_main_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableEnd="@mipmap/jft_but_arrow"
+                    android:hint="请选择工作性质"
+                    app:layout_constraintTop_toBottomOf="@id/tv_boss_work_tip" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/line_color"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_boss_experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_boss_experience_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_18"
+                    android:text="经验要求"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/sp_14" />
+
+
+                <TextView
+                    android:id="@+id/tv_boss_experience"
+                    style="@style/text_main_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableEnd="@mipmap/jft_but_arrow"
+                    android:hint="请选择经验要求"
+                    app:layout_constraintTop_toBottomOf="@id/tv_boss_experience_tip" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/line_color"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_boss_education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_boss_edu_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_18"
+                    android:text="最低学历"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/sp_14" />
+
+
+                <TextView
+                    android:id="@+id/tv_boss_education"
+                    style="@style/text_main_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableEnd="@mipmap/jft_but_arrow"
+                    android:hint="请选择最低学历"
+                    app:layout_constraintTop_toBottomOf="@id/tv_boss_edu_tip" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/line_color"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_boss_work_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_boss_work_pay_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_18"
+                    android:text="薪资范围"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/sp_14" />
+
+
+                <TextView
+                    android:id="@+id/tv_boss_work_pay"
+                    style="@style/text_main_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableEnd="@mipmap/jft_but_arrow"
+                    android:hint="请选择薪资范围"
+                    app:layout_constraintTop_toBottomOf="@id/tv_boss_work_pay_tip" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/line_color"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_boss_position_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_boss_position_desc_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_18"
+                    android:text="职位描述"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/sp_14" />
+
+
+                <TextView
+                    android:id="@+id/tv_boss_position_desc"
+                    style="@style/text_main_15"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableEnd="@mipmap/jft_but_arrow"
+                    android:hint="请填写职位描述"
+                    android:background="@color/transparent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_boss_position_desc_tip" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/line_color"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_boss_position_light_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_18"
+                    android:text="职位亮点"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/sp_14" />
+
+
+                <TextView
+                    android:id="@+id/tv_boss_position_light"
+                    style="@style/text_main_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/transparent"
+                    android:drawableEnd="@mipmap/jft_but_arrow"
+                    android:hint="请选择职位亮点"
+
+                    app:layout_constraintTop_toBottomOf="@id/tv_boss_position_light_tip" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/line_color"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_boss_position_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_boss_position_area_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_18"
+                    android:text="工作地点"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/sp_14" />
+
+
+                <TextView
+                    android:id="@+id/tv_boss_position_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableEnd="@mipmap/jft_but_arrow"
+                    android:hint="请选择工作地点"
+                   style="@style/text_main_15"
+                    app:layout_constraintTop_toBottomOf="@id/tv_boss_position_area_tip" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/line_color"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_92">
+
+                <Button
+                    android:id="@+id/btn_boss_commit"
+                    style="@style/text_fu_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_47"
+                    android:background="@drawable/shape_gray_job_normal_rectangle"
+                    android:text="完成"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.recruit.RecruitInActivity">
+
+    <include layout="@layout/gm_title" />
+
+    <TextView
+        style="@style/text_main_22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="选择当前你的身份"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="之后可以在“我的-设置”中切换" />
+
+    <LinearLayout
+        android:id="@+id/ll_job_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jft_img_iwanttoapplyforajob" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:background="@drawable/gm_gray_radio_line"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingTop="@dimen/dp_4"
+            android:paddingRight="@dimen/dp_16"
+            android:paddingBottom="@dimen/dp_4"
+            android:text="我要求职" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_invite_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jft_img_iwanttorecruit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:background="@drawable/gm_gray_radio_line"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingTop="@dimen/dp_4"
+            android:paddingRight="@dimen/dp_16"
+            android:paddingBottom="@dimen/dp_4"
+            android:text="我要招聘" />
+    </LinearLayout>
+</LinearLayout>

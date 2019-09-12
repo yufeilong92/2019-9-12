@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner_rc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:background="@color/blue" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_20"
+        android:onClick="onfinish"
+        android:scaleType="center"
+        android:src="@mipmap/jft_but_userhomepagereturn" />
+
+    <TextView
+        android:id="@+id/tv_rc_invnter"
+        style="@style/text_14_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="right"
+        android:paddingRight="@dimen/dp_4"
+        android:background="@mipmap/ic_bg_gray"
+        android:padding="@dimen/dp_4"
+        android:text="我要招聘" />
+
+    <LinearLayout
+        android:id="@+id/ll_rc_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_below="@id/banner_rc"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_marginTop="-20dp"
+        android:layout_marginRight="@dimen/dp_32"
+        android:background="@drawable/gm_4_white_bg_radio"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/jft_but_bosshomesearch" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="请搜索职位或公司..." />
+
+        <View
+            style="@style/line_with_one"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8" />
+
+        <TextView
+            android:id="@+id/tv_rc_home_location"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:drawableRight="@mipmap/jft_but_inferiortriangle"
+            android:drawablePadding="@dimen/dp_4"
+            android:paddingRight="@dimen/dp_16"
+            android:text="位置" />
+
+    </LinearLayout>
+</RelativeLayout>

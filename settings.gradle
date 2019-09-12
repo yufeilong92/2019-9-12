@@ -1,0 +1,1 @@
+include ':app', ':library', ':matisse', ':multiple-status-view', ':lib_zxing', ':passlibrary', ':citypicker', ':imagecrop', ':ocr_ui'

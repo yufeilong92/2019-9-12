@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_64"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingEnd="@dimen/dp_20"
+    tools:ignore="MissingConstraints">
+
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="@dimen/dp_29"
+        android:layout_height="@dimen/dp_29"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_pay_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_15"
+        android:textColor="@color/color_444A53"
+        android:textSize="@dimen/ts_15"
+        app:layout_constraintBottom_toBottomOf="@id/iv_image"
+        app:layout_constraintLeft_toRightOf="@id/iv_image"
+        app:layout_constraintTop_toTopOf="@id/iv_image" />
+
+
+    <CheckBox
+        android:id="@+id/cb_select"
+        android:background="@drawable/gender_selector"
+        android:button="@null"
+        app:layout_constraintBottom_toBottomOf="@id/iv_image"
+        android:clickable="false"
+        app:layout_constraintTop_toTopOf="@id/iv_image"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="@dimen/dp_22"
+        android:layout_height="@dimen/dp_22" />
+
+</android.support.constraint.ConstraintLayout>

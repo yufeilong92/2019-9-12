@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.mine.bank.BindAlipayActivity">
+
+    <include layout="@layout/gm_title_right" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_16"
+        android:background="@drawable/gm_white_4_raido"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="姓名" />
+
+            <EditText
+                android:gravity="right|center_vertical"
+                android:id="@+id/et_alipay_name"
+                style="@style/text_main_14"
+                android:singleLine="true"
+                android:maxLength="10"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_40"
+                android:background="@color/transparent"
+                android:hint="请填写您的真实姓名" />
+        </LinearLayout>
+
+        <View
+            style="@style/line_height_one"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_main_14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="账号" />
+
+            <EditText
+                android:gravity="right|center_vertical"
+                android:id="@+id/et_alipay_id"
+                style="@style/text_main_14"
+                android:maxLength="18"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_40"
+                android:inputType="textEmailAddress"
+                android:background="@color/transparent"
+                android:hint="请填写支付宝账号" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="@dimen/dp_16"
+        style="@style/text_fu_13"
+        android:text="填写正确的信息，保障后续的提现能正常到款。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_bind_alipay"
+        style="@style/btn_17_white"
+        android:text="确认绑定" />
+</LinearLayout>

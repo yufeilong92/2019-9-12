@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_10"
+    tools:ignore="MissingConstraints">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_148"
+        android:layout_marginStart="@dimen/dp_13"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_goneMarginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_13"
+        android:background="@drawable/shape_white_rectangle"
+        android:paddingStart="@dimen/dp_13"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_13">
+
+
+        <ImageView
+            android:id="@+id/iv_shop_image"
+            android:layout_width="@dimen/dp_84"
+            android:layout_height="@dimen/dp_84"
+            android:layout_marginTop="@dimen/dp_10"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="@color/color_444A53"
+            android:textSize="@dimen/ts_13"
+            app:layout_constraintLeft_toRightOf="@id/iv_shop_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_shop_image"
+            tools:text="121212122" />
+
+        <TextView
+            android:id="@+id/tv_shop_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_8"
+            android:textColor="@color/color_7B8391"
+            android:textSize="@dimen/ts_13"
+            app:layout_constraintLeft_toRightOf="@id/iv_shop_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_shop_name"
+            tools:text="1212" />
+
+        <TextView
+            android:id="@+id/tv_shop_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:textColor="@color/tab_color"
+            android:textSize="@dimen/ts_15"
+            app:layout_constraintBottom_toBottomOf="@id/iv_shop_image"
+            app:layout_constraintLeft_toRightOf="@id/iv_shop_image"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:text="12121212" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/color_DDE5EF"
+            app:layout_constraintTop_toBottomOf="@id/iv_shop_image" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_11"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_shop_image">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="?selectableItemBackground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/ctl_up"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/text_edit"
+                    android:textColor="@color/color_444A53" />
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_up"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="?selectableItemBackground"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toRightOf="@id/ctl_edit"
+                app:layout_constraintRight_toLeftOf="@id/ctl_delete">
+
+                <TextView
+                    android:id="@+id/tv_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/text_up"
+                    android:textColor="@color/color_444A53" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ctl_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="?selectableItemBackground"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toRightOf="@id/ctl_up"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/text_delete"
+                    android:textColor="@color/color_444A53" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_30"
+                android:background="@color/color_DDE5EF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/ctl_up"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_30"
+                android:background="@color/color_DDE5EF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/ctl_edit"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

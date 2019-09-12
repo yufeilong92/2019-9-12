@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_chat_job"
+        android:layout_width="match_parent"
+        android:text="下拉获取历史记录"
+        android:gravity="center"
+        style="@style/text_fu_12"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/ll_job_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:background="@drawable/bg_boss_edit_gray"
+        android:padding="@dimen/dp_16">
+
+        <ImageView
+            android:id="@+id/iv_item_job_top_logo"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:src="@mipmap/ic_default_picture" />
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_item_job_top_title"
+                    style="@style/text_main_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:text="222222"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/tv_item_job_top_money"
+                    style="@style/text_16_yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="222" />
+            </LinearLayout>
+
+            <TextView
+                android:text="222222"
+                android:id="@+id/tv_item_job_top_content"
+                style="@style/text_fu_13"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                style="@style/text_main_13"
+                android:layout_marginTop="@dimen/dp_8"
+                android:drawablePadding="@dimen/dp_10"
+                android:id="@+id/tv_item_job_top_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/jft_icon_companyaddress"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_chat_chat"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/dp_16"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_lift_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_chat_lift_logo"
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+
+                android:layout_marginTop="@dimen/dp_10"
+                android:src="@mipmap/ic_default_picture" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_58"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_chat_lift_name"
+                    style="@style/text_main_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="客服" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_4">
+
+                    <ImageView
+                        android:id="@+id/iv_chat_lift"
+                        android:layout_width="@dimen/dp_10"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:scaleType="center"
+                        android:src="@drawable/bg_chat_lift" />
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/iv_chat_lift_img"
+                        android:layout_toRightOf="@id/iv_chat_lift"
+                        android:padding="@dimen/dp_8"
+                        android:layout_width="@dimen/dp_80"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_default_picture"
+                        android:layout_height="@dimen/dp_100"/>
+                    <TextView
+                        android:id="@+id/tv_chat_lift"
+                        style="@style/text_main_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_chat_lift"
+                        android:background="@drawable/gm_white_4_raido"
+                        android:padding="@dimen/dp_8"
+                        android:text="2222" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_right_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_68"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/iv_chat_right_img"
+                    android:layout_toLeftOf="@id/iv_chat_right"
+                    android:layout_width="@dimen/dp_80"
+                    android:scaleType="fitXY"
+                    android:padding="@dimen/dp_8"
+                    android:src="@mipmap/ic_default_picture"
+                    android:layout_height="@dimen/dp_100"/>
+                <TextView
+                    android:id="@+id/tv_chat_right"
+                    style="@style/text_15_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iv_chat_right"
+                    android:background="@drawable/gm_4_red_bg_circle"
+                    android:padding="@dimen/dp_8"
+                    android:text="2222222" />
+
+                <ImageView
+                    android:id="@+id/iv_chat_right"
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@drawable/bg_chat_right" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_chat_right_logo"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+                android:src="@mipmap/ic_default_picture" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

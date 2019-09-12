@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.recruit.chat.BossChatActivity">
+
+    <include layout="@layout/gm_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_color">
+
+            <LinearLayout
+                android:id="@+id/ll_chat_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_16"
+                android:paddingBottom="@dimen/dp_8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_48"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_boss_title"
+                        style="@style/text_main_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text=" 服装店" />
+
+
+                    <TextView
+                        android:id="@+id/tv_boss_values"
+                        style="@style/text_16_yellow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="4k-6k" />
+                </LinearLayout>
+
+
+                <com.tsyc.tianshengyoucai.view.FlowLayout
+                    android:id="@+id/fl_boss_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_boss_logo"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25" />
+
+                    <TextView
+                        android:id="@+id/tv_boss_user"
+                        style="@style/text_main_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:text="招聘者" />
+
+                    <TextView
+                        android:id="@+id/tv_job_boss_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gm_gray_bg"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_4"
+                        android:paddingRight="@dimen/dp_10"
+                        android:paddingBottom="@dimen/dp_4"
+                        android:text="删除"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View style="@style/line_height_one" />
+
+                <TextView
+                    android:id="@+id/tv_boss_time"
+                    style="@style/text_fu_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:text="5月24日 10:20 由你发起的沟通" />
+
+
+            </LinearLayout>
+
+            <!--        <com.scwang.smartrefresh.layout.SmartRefreshLayout-->
+            <!--            android:id="@+id/boss_smrlayoyut"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--             android:layout_height="match_parent">-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlv_boss_chat_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/ll_boss_chat_button"
+                android:layout_below="@id/ll_chat_job" />
+            <!--        </com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+
+            <LinearLayout
+                android:id="@+id/ll_boss_chat_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_boss_chat_add"
+                    android:layout_width="@dimen/dp_48"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@mipmap/jft_but_ewlyadded" />
+
+                <View style="@style/line_with_one" />
+
+                <EditText
+                    android:id="@+id/et_boss_chat_input"
+                    style="@style/text_main_14"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_48"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:hint="请输入您要咨询的内容"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_8" />
+
+                <Button
+                    android:id="@+id/btn_boss_chat_send"
+                    style="@style/text_15_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/select_s"
+                    android:text="发送" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

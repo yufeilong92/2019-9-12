@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:ignore="MissingConstraints">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ctl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:background="@color/color_F85859"
+        android:paddingTop="@dimen/dp_35">
+
+        <LinearLayout
+            android:id="@+id/ctl_search"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_13"
+            android:layout_weight="1"
+            android:background="@drawable/shape_search_rectangle"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dp_13"
+            android:paddingEnd="@dimen/dp_13"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/jft_icon_search" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:background="@null"
+                android:hint="@string/search_hint"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@color/color_transparent"
+                android:textSize="@dimen/ts_13" />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ctl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_39"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/ctl_top">
+
+        <TextView
+            android:id="@+id/tv_sort_all"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_37"
+            android:gravity="center"
+            android:text="@string/find_tab_l"
+            android:textColor="@color/tab_color"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv_sort_sale" />
+
+        <ImageView
+            android:id="@+id/iv_sort_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_indicator_line"
+            app:layout_constraintLeft_toLeftOf="@id/tv_sort_all"
+            app:layout_constraintRight_toRightOf="@id/tv_sort_all"
+            app:layout_constraintTop_toBottomOf="@id/tv_sort_all" />
+
+        <TextView
+            android:id="@+id/tv_sort_sale"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_37"
+            android:gravity="center"
+            android:text="@string/find_tab_c"
+            android:textColor="@color/color_7B8391"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@+id/tv_sort_all"
+            app:layout_constraintRight_toLeftOf="@+id/ctl_sort_price" />
+
+        <ImageView
+            android:id="@+id/iv_sort_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/shape_indicator_line"
+            app:layout_constraintLeft_toLeftOf="@id/tv_sort_sale"
+            app:layout_constraintRight_toRightOf="@id/tv_sort_sale"
+            app:layout_constraintTop_toBottomOf="@id/tv_sort_sale" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ctl_sort_price"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_37"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@+id/tv_sort_sale"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/tv_sort_price"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_37"
+                android:drawableEnd="@mipmap/jft_but_screeningup"
+                android:gravity="center"
+                android:text="@string/find_tab_r"
+                android:textColor="@color/color_7B8391"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/app_name" />
+
+            <ImageView
+                android:id="@+id/iv_sort_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@drawable/shape_indicator_line"
+                app:layout_constraintLeft_toLeftOf="@id/tv_sort_price"
+                app:layout_constraintRight_toRightOf="@id/tv_sort_price"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ctl_tab"
+        app:srlEnableAutoLoadMore="false"
+        app:srlEnableLoadMore="true">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.classic.common.MultipleStatusView
+            android:id="@+id/multiple_status_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:emptyView="@layout/custom_empty_view"
+            app:errorView="@layout/custom_error_view"
+            app:loadingView="@layout/custom_loading_view"
+            app:noNetworkView="@layout/custom_no_network_view">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_color"
+                android:overScrollMode="never"
+                tools:listitem="@android:layout/simple_list_item_2" />
+
+        </com.classic.common.MultipleStatusView>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="Scale"
+            app:srlPrimaryColor="@android:color/white" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</android.support.constraint.ConstraintLayout>

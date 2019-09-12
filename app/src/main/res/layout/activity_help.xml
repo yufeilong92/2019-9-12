@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.activity.mine.help.HelpActivity">
+
+    <include layout="@layout/gm_title" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/gm_smrlayoyut"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/main_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_default_picture"
+                android:id="@+id/iv_help_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_108"
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:background="@color/main_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="常见问题" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/gm_rlv_content"
+                android:background="@color/white"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

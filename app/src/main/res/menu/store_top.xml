@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/iv_collect"
+        android:orderInCategory="100"
+        android:title="@string/text_collect_store"
+        android:icon="@drawable/store_collect_selector"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/iv_share"
+        android:icon="@mipmap/jft_but_sharingshop"
+        android:orderInCategory="100"
+        android:title="@string/text_share_store"
+        app:showAsAction="always" />
+</menu>

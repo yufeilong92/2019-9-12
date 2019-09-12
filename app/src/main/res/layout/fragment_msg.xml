@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_24"
+        android:background="@drawable/bg_title_bar" />
+
+    <include layout="@layout/gm_title_withoutback" />
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color"
+        app:srlEnableLoadMore="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@drawable/gm_white_4_raido"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_16">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_home_msg_invite"
+                        style="@style/text_main_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@mipmap/jft_but_recruitmentmessagemodule"
+                        android:drawablePadding="@dimen/dp_4"
+                        android:gravity="center"
+                        android:text="招聘信息" />
+                    <TextView
+                        android:id="@+id/tv_home_msg_invite_number"
+                        android:layout_width="@dimen/dp_12"
+                        android:layout_height="@dimen/dp_12"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:background="@drawable/gm_red_circle_bg"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/ts_9" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+
+                    <TextView
+                        android:id="@+id/tv_home_msg_setting"
+                        style="@style/text_main_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@mipmap/jft_but_systemmessagemodule"
+                        android:drawablePadding="@dimen/dp_4"
+                        android:gravity="center"
+                        android:text="系统通知" />
+                    <TextView
+                        android:id="@+id/tv_home_msg_setting_number"
+                        android:layout_width="@dimen/dp_12"
+                        android:layout_height="@dimen/dp_12"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:background="@drawable/gm_red_circle_bg"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/ts_9" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+
+                    <TextView
+                        android:id="@+id/tv_home_msg_order"
+                        style="@style/text_main_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@mipmap/jft_but_ordermessagemodule"
+                        android:drawablePadding="@dimen/dp_4"
+                        android:gravity="center"
+                        android:text="订单通知" />
+                    <TextView
+                        android:id="@+id/tv_home_msg_order_number"
+                        android:layout_width="@dimen/dp_12"
+                        android:layout_height="@dimen/dp_12"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:background="@drawable/gm_red_circle_bg"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/ts_9" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_home_msg_server"
+                        style="@style/text_main_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@mipmap/jft_but_mycustomerservice"
+                        android:drawablePadding="@dimen/dp_4"
+                        android:gravity="center"
+                        android:text="我的客服" />
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_home_msg_server_number"
+                        android:layout_width="@dimen/dp_12"
+                        android:layout_height="@dimen/dp_12"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:background="@drawable/gm_red_circle_bg"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/ts_9" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlv_msg_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10" />
+
+            <include layout="@layout/empty" />
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

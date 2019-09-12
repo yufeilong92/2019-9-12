@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.mine.money.MyMoneyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_243"
+            android:background="@mipmap/jft_img_toppage">
+
+            <TextView
+                android:id="@+id/tv_title_money_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_90"
+                android:gravity="center"
+                android:text="钱包余额(元)"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts_15" />
+
+            <TextView
+                android:id="@+id/tv_mymoney_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title_money_show"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts_30"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="@drawable/gm_white_4_raido">
+
+                <TextView
+                    android:id="@+id/tv_money_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_18"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/jft_but_balancerecharge"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:text="余额充值" />
+
+                <View
+                    style="@style/line_with_one"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginBottom="@dimen/dp_4" />
+
+                <TextView
+                    android:id="@+id/tv_money_tixian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_18"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/jft_but_mybalancecash"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:text="余额提现" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_height="@dimen/dp_48">
+            <ImageView
+                android:id="@+id/gm_iv_back"
+                android:padding="@dimen/dp_14"
+                android:src="@mipmap/jft_but_whitearrow"
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="48dp" />
+            <TextView
+                android:id="@+id/gm_tv_title"
+                android:textSize="@dimen/ts_18"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        style="@style/text_fu_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_16"
+        android:text="余额明细" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:visibility="gone"
+        android:id="@+id/scrollview_money"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/smarfrehsl"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:srlEnableRefresh="false">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rlv_money_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingRight="@dimen/dp_16"
+                     />
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/line_color" />
+
+                <TextView
+                    style="@style/text_fu_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="没有更多了" />
+
+                <View
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/line_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:scaleType="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+         android:src="@mipmap/common_blankimg_ser"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

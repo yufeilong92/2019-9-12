@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dialog_camner"
+        style="@style/text_main_16"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="拍照" />
+
+    <View style="@style/line_height_one" />
+
+    <TextView
+        android:id="@+id/tv_dialog_xiangce"
+        style="@style/text_main_16"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="手机相册" />
+
+    <TextView
+        android:id="@+id/tv_dialog_canner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/main_color"
+        android:gravity="center"
+        android:text="取消" />
+</LinearLayout>

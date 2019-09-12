@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:padding="@dimen/dp_10"
+            android:id="@+id/iv_pay_hear"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="match_parent"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/tv_pay_type_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/iv_pay_type"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/jft_but_unselectedgender" />
+    </LinearLayout>
+</LinearLayout>

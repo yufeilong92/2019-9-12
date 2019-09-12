@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
+
+    <include layout="@layout/gm_title" />
+
+    <ScrollView
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_200"
+                android:layout_margin="@dimen/dp_16"
+                android:background="@drawable/gm_white_4_raido"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_my_team_values"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:text="0.00"
+                    android:textColor="@color/color_444A53"
+                    android:textSize="@dimen/ts_32"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/text_fu_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:text="佣金总收益(元)" />
+
+                <Button
+                    style="@style/btn_red_15_white"
+                    android:layout_width="@dimen/dp_135"
+                    android:layout_height="@dimen/dp_40"
+                    android:id="@+id/btn_myteam_submit"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:text="提现" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_fu_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:text="我的下级" />
+
+            <include layout="@layout/gm_refhres_layout" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
